@@ -1,3 +1,13 @@
+@import './fonts.css';
+
+body{
+    font-family: Proxima-Regular;
+}
+
+p{
+    margin: 0 0 20px;
+}
+
 #header .header-top{
     background: url("../images/header-top.jpg") repeat-x scroll 0 0 transparent;
 }
@@ -18,4 +28,92 @@
     background: #005141;
     height: 39px;
     color: #FFF;
+    font-family: Proxima-Bold;
+    font-size: 16px;
+}
+
+#content{
+    background: url("../images/content-bg.jpg") repeat-x scroll center top #FFFFFF; 
+    padding: 10px 0;
+}
+
+#content .content-header h1{
+    background: url("../images/title-arrow.jpg") no-repeat scroll left 1px transparent;
+    border-bottom: 1px solid #B9B9B9;
+    color: #005645;
+    font-family: Proxima-Bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    text-transform: uppercase;
+}
+
+#content .content-bread .breadcrumb{
+    background-color: transparent;
+    list-style: none outside none;
+    margin: 0 0 20px;
+    padding: 2px 0 8px;
+    text-transform: uppercase;
+    font-family: Proxima-Bold;
+    font-size: 14px;
+}
+
+#content .content-bread .breadcrumb a{
+    background-color: transparent;
+    list-style: none outside none;
+    margin: 0 0 20px;
+    padding: 2px 0 8px;
+    text-transform: uppercase;
+    color: #767676;
+}
+
+#content .content {
+    font-size: 13px;
+    color: #555555;
+    line-height: 20px;
+}
+
+#content .content-pos form label{
+    text-transform: uppercase;
+    font-family: Helvetica;
+    
+}
+
+#content .content-pos form button{
+    border-left: 0;
+}
+
+#content .content-pos form input{
+    border-left: 0;
+    border-right: 0;
+}
+
+#footer .footer-top{
+    background: #eeeeee;
+    height: 33px;
+}
+
+#footer .footer-bottom{
+    background: #e2e2e2;
+    padding: 10px 0;
+}
+
+#footer .footer-bottom ul{
+    list-style: none;
+}
+
+#footer .footer-bottom ul li:first-child{
+    color: #004e44;
+    padding-bottom: 28px;
+    font-size: 12px;
+}
+
+#footer .footer-bottom ul li{
+    padding-bottom: 8px;
+}
+
+#footer .footer-bottom ul a{
+    color: #808080;
+    font-size: 12px;
+    padding-bottom: 8px;
 }
