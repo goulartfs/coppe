@@ -1,0 +1,21 @@
+#header .header-top{
+    background: url("../images/header-top.jpg") repeat-x scroll 0 0 transparent;
+}
+
+#header .header-top .header-top-links{
+    text-align: right;
+}
+
+#header .header-middle{
+    background: #e4e4e4;
+}
+
+#header .header-middle > .container{
+    background: url("../images/header-middle-bg.jpg") repeat-y scroll 0 0 transparent;
+}
+
+#header .header-navbar{
+    background: #005141;
+    height: 39px;
+    color: #FFF;
+}
