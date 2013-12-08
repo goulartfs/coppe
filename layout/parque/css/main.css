@@ -75,17 +75,30 @@ p{
 
 #content .content-pos form label{
     text-transform: uppercase;
-    font-family: Helvetica;
-    
+    font-family: Helvetica-Bold;
+    font-size: 13px;
+    color: #686868;
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#content .content-pos form input{
+    border-right: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 #content .content-pos form button{
     border-left: 0;
-}
-
-#content .content-pos form input{
-    border-left: 0;
-    border-right: 0;
+    border-radius: 0;
+    background: none repeat scroll 0 0 transparent;
+    color: #f37423;
+    font-family: Proxima-Bold;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 #footer .footer-top{

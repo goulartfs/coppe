@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
