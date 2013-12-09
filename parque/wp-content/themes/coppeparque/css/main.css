@@ -1,0 +1,421 @@
+@import './fonts.css';
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    outline: none;
+    outline: none \9;
+    /* IE6-9 */
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+body{
+    font-family: Proxima-Regular;
+}
+
+p{
+    margin: 0 0 20px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+    border-bottom: 1px dashed #bbbbbb;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+h5{
+    font-size: 14px;
+}
+
+h6{
+    font-size: 13px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #747474;
+    font-family: Proxima-Regular;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#header .header-top{
+    background: url("../images/header-top.jpg") repeat-x scroll 0 0 transparent;
+}
+
+#header .header-top .header-top-links{
+    text-align: right;
+}
+
+#header .header-middle{
+    background: #e4e4e4;
+}
+
+#header .header-middle > .container{
+    background: url("../images/header-middle-bg.jpg") repeat-y scroll 0 0 transparent;
+}
+
+#header .header-middle .top-links{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Proxima-Bold;
+    margin-top: 10px;
+}
+
+#header .header-middle .top-links li {
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+#header .header-middle .top-links li:first-child {
+    margin-left: 0;
+}
+
+#header .header-middle .top-links .incubadora{
+    background: url("../images/logo-incubadora.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links .ufrj{
+    background: url("../images/logo-ufrj.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links .english{
+    background: url("../images/english-version.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links a{
+    color: #797979;
+}
+
+#header .header-middle .search-bar{
+    font-family: Proxima-Bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#header .header-middle .search-bar label{
+    background: url("../images/lupa.png") no-repeat scroll 5px 4px transparent;
+    line-height: 24px;
+    padding-left: 30px;
+    border-right: 0;
+    color: #919191;
+}
+
+#header .header-middle .search-bar input{
+    border-right: 0;
+    border-left: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#header .header-middle .search-bar input:focus{
+    border-color: #CCCCCC;
+}
+
+#header .header-middle .search-bar button{
+    border-left: 0;
+    border-radius: 0;
+    background: none repeat scroll 0 0 #FFF;
+    color: #014c46;
+    font-family: Proxima-Bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    padding-top: 6px;
+}
+
+#header .header-middle .bottom-links{
+    text-transform: uppercase;
+    font-family: Proxima-Bold;
+}
+
+#header .header-middle .bottom-links a{
+    color: #797979;
+}
+
+#header .header-middle .bottom-links li{
+    margin-left: 17px;
+}
+
+#header .header-middle .bottom-links li:first-child{
+    margin-left: 0px;
+}
+
+#header .header-navbar{
+    background: #005141;
+    height: 39px;
+    color: #FFF;
+    font-family: Proxima-Bold;
+    font-size: 16px;
+}
+
+#content{
+    background: url("../images/content-bg.jpg") repeat-x scroll center top #FFFFFF; 
+    padding: 10px 0;
+}
+
+#content .content-header h1{
+    background: url("../images/title-arrow.jpg") no-repeat scroll left 1px transparent;
+    border-bottom: 1px solid #B9B9B9;
+    color: #005645;
+    font-family: Proxima-Bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    text-transform: uppercase;
+}
+
+#content .content-bread .breadcrumb{
+    background-color: transparent;
+    list-style: none outside none;
+    margin: 0 0 20px;
+    padding: 2px 0 8px;
+    text-transform: uppercase;
+    font-family: Proxima-Bold;
+    font-size: 14px;
+}
+
+#content .content-bread .breadcrumb a{
+    background-color: transparent;
+    list-style: none outside none;
+    margin: 0 0 20px;
+    padding: 2px 0 8px;
+    text-transform: uppercase;
+    color: #767676;
+}
+
+#content .content {
+    font-size: 13px;
+    color: #555555;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+#content .content-pos{
+    border-top: 1px solid #dddddd;
+    padding-top: 24px;
+}
+
+#content .content-pos form label{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #686868;
+    font-family: Helvetica-Bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+#content .content-pos form input{
+    border-right: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#content .content-pos form button{
+    border-left: 0;
+    border-radius: 0;
+    background: none repeat scroll 0 0 transparent;
+    color: #f37423;
+    font-family: Proxima-Bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#sidebar h2:first-child{
+    margin-top: 0;
+}
+
+#sidebar .sidebar-title{
+    color: #086459;
+    display: block;
+    font-family: Proxima-Regular;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#sidebar .sidebar{
+    margin-top: 30px;
+}
+
+#sidebar .sidebar:first-child{
+    margin-top: 0;
+}
+
+#sidebar .sidebar > .widget{
+    padding-left: 20px;
+}
+
+#sidebar .sidebar > .more{
+    border-top: 1px solid #bbbbbb;
+    margin-top: 25px;
+    padding-top: 5px;
+}
+
+#sidebar .sidebar > .more a{
+    text-transform: uppercase;
+    color: #f37423;
+}
+
+#sidebar ul{
+    margin-left: 0px;
+    list-style: none;
+}
+
+#sidebar ul li{
+    background: url("../images/bullet.png") no-repeat scroll 0 3px transparent;
+    margin-left: 0;
+    padding-left: 19px;
+    margin-top: 25px;
+}
+
+#sidebar ul li:first-child{
+    margin-top: 0;
+}
+
+#sidebar a{
+    color: #555555;
+}
+
+
+#footer .footer-top{
+    background: #eeeeee;
+    height: 33px;
+}
+
+#footer .footer-bottom{
+    background: #e2e2e2;
+    padding: 10px 0;
+}
+
+#footer .footer-bottom ul{
+    list-style: none;
+}
+
+#footer .footer-bottom ul li:first-child{
+    color: #004e44;
+    padding-bottom: 28px;
+    font-size: 12px;
+}
+
+#footer .footer-bottom ul li{
+    padding-bottom: 8px;
+}
+
+#footer .footer-bottom ul a{
+    color: #808080;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+
+/**
+ * 4.2 Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+ul.nav-menu,
+div.nav-menu > ul {
+    margin: 0;
+    font-family: Proxima-Bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-menu li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.nav-menu > li a {
+    padding: 12px 20px 7px;
+}
+
+.nav-menu > li > a {
+    padding: 12px 40px 7px;
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover {
+    background-color: #FFF;
+    color: #005645;
+}
+
+.nav-menu .sub-menu,
+.nav-menu .children {
+    background-color: #FFF;
+    border: 2px solid #f7f5e7;
+    border-top: 0;
+    display: none;
+    padding: 0;
+    position: absolute;
+    left: -2px;
+    z-index: 99999;
+    margin-left: 0;
+}
+
+.nav-menu .sub-menu ul,
+.nav-menu .children ul {
+    border-left: 0;
+    left: 100%;
+    top: 0;
+}
+
+ul.nav-menu ul a,
+.nav-menu ul ul a {
+    color: #555;
+    margin: 0;
+    width: 200px;
+    text-transform: none;
+    font-family: Proxima-Regular;
+    border-left: 4px solid transparent;
+}
+
+ul.nav-menu ul a:hover,
+.nav-menu ul ul a:hover {
+    background-color: #f37323;
+    color: #FFF;
+    border-left: 4px solid #db572f;
+}
+
+ul.nav-menu li:hover > ul,
+.nav-menu ul li:hover > ul {
+    display: block;
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+/*    color: #bc360a;
+    font-style: italic;*/
+}
+
+.menu-toggle {
+    display: none;
+}
