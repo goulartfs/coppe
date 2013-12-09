@@ -1,5 +1,15 @@
 @import './fonts.css';
 
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    outline: none;
+    outline: none \9;
+    /* IE6-9 */
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 body{
     font-family: Proxima-Regular;
 }
@@ -8,6 +18,37 @@ p{
     margin: 0 0 20px;
 }
 
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+    border-bottom: 1px dashed #bbbbbb;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+h5{
+    font-size: 14px;
+}
+
+h6{
+    font-size: 13px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #747474;
+    font-family: Proxima-Regular;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 #header .header-top{
     background: url("../images/header-top.jpg") repeat-x scroll 0 0 transparent;
 }
@@ -22,6 +63,93 @@ p{
 
 #header .header-middle > .container{
     background: url("../images/header-middle-bg.jpg") repeat-y scroll 0 0 transparent;
+}
+
+#header .header-middle .top-links{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Proxima-Bold;
+    margin-top: 10px;
+}
+
+#header .header-middle .top-links li {
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+#header .header-middle .top-links li:first-child {
+    margin-left: 0;
+}
+
+#header .header-middle .top-links .incubadora{
+    background: url("../images/logo-incubadora.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links .ufrj{
+    background: url("../images/logo-ufrj.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links .english{
+    background: url("../images/english-version.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links a{
+    color: #797979;
+}
+
+#header .header-middle .search-bar{
+    font-family: Proxima-Bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#header .header-middle .search-bar label{
+    background: url("../images/lupa.png") no-repeat scroll 5px 4px transparent;
+    line-height: 24px;
+    padding-left: 30px;
+    border-right: 0;
+    color: #919191;
+}
+
+#header .header-middle .search-bar input{
+    border-right: 0;
+    border-left: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#header .header-middle .search-bar input:focus{
+    border-color: #CCCCCC;
+}
+
+#header .header-middle .search-bar button{
+    border-left: 0;
+    border-radius: 0;
+    background: none repeat scroll 0 0 #FFF;
+    color: #014c46;
+    font-family: Proxima-Bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    padding-top: 6px;
+}
+
+#header .header-middle .bottom-links{
+    text-transform: uppercase;
+    font-family: Proxima-Bold;
+}
+
+#header .header-middle .bottom-links a{
+    color: #797979;
+}
+
+#header .header-middle .bottom-links li{
+    margin-left: 17px;
+}
+
+#header .header-middle .bottom-links li:first-child{
+    margin-left: 0px;
 }
 
 #header .header-navbar{
@@ -71,17 +199,25 @@ p{
     font-size: 13px;
     color: #555555;
     line-height: 20px;
+    margin-top: 25px;
+}
+
+#content .content-pos{
+    border-top: 1px solid #dddddd;
+    padding-top: 24px;
 }
 
 #content .content-pos form label{
-    text-transform: uppercase;
-    font-family: Helvetica-Bold;
-    font-size: 13px;
-    color: #686868;
     background: none repeat scroll 0 0 transparent;
     border: 0 none;
+    color: #686868;
+    font-family: Helvetica-Bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-right: 15px;
     padding-bottom: 5px;
     padding-top: 5px;
+    text-transform: uppercase;
 }
 
 #content .content-pos form input{
@@ -100,6 +236,64 @@ p{
     font-size: 12px;
     text-transform: uppercase;
 }
+
+#sidebar h2:first-child{
+    margin-top: 0;
+}
+
+#sidebar .sidebar-title{
+    color: #086459;
+    display: block;
+    font-family: Proxima-Regular;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#sidebar .sidebar{
+    margin-top: 30px;
+}
+
+#sidebar .sidebar:first-child{
+    margin-top: 0;
+}
+
+#sidebar .sidebar > .widget{
+    padding-left: 20px;
+}
+
+#sidebar .sidebar > .more{
+    border-top: 1px solid #bbbbbb;
+    margin-top: 25px;
+    padding-top: 5px;
+}
+
+#sidebar .sidebar > .more a{
+    text-transform: uppercase;
+    color: #f37423;
+}
+
+#sidebar ul{
+    margin-left: 0px;
+    list-style: none;
+}
+
+#sidebar ul li{
+    background: url("../images/bullet.png") no-repeat scroll 0 3px transparent;
+    margin-left: 0;
+    padding-left: 19px;
+    margin-top: 25px;
+}
+
+#sidebar ul li:first-child{
+    margin-top: 0;
+}
+
+#sidebar a{
+    color: #555555;
+}
+
 
 #footer .footer-top{
     background: #eeeeee;
