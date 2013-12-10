@@ -127,7 +127,7 @@ h2, h3, h4, h5, h6 {
     border-left: 0;
     border-radius: 0;
     background: none repeat scroll 0 0 #FFF;
-    color: #014c46;
+    color: #C4151C;
     font-family: Proxima-Bold;
     font-size: 12px;
     text-transform: uppercase;
@@ -153,7 +153,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #header .header-navbar{
-    background: #005141;
+    background: #a20e14;
     height: 39px;
     color: #FFF;
     font-family: Proxima-Bold;
@@ -166,12 +166,12 @@ h2, h3, h4, h5, h6 {
 }
 
 #content .content-header h1{
-    background: url("../images/title-arrow.jpg") no-repeat scroll left 1px transparent;
+    background: url("../images/title-arrow.png") no-repeat scroll left 1px transparent;
     border-bottom: 1px solid #B9B9B9;
-    color: #005645;
+    color: #c4151c;
     font-family: Proxima-Bold;
     font-size: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 10cpx;
     padding-left: 32px;
     text-transform: uppercase;
 }
@@ -231,7 +231,7 @@ h2, h3, h4, h5, h6 {
     border-left: 0;
     border-radius: 0;
     background: none repeat scroll 0 0 transparent;
-    color: #f37423;
+    color: #c4151c;
     font-family: Proxima-Bold;
     font-size: 12px;
     text-transform: uppercase;
@@ -242,7 +242,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #sidebar .sidebar-title{
-    color: #086459;
+    color: #c4151c;
     display: block;
     font-family: Proxima-Regular;
     font-size: 16px;
@@ -271,7 +271,7 @@ h2, h3, h4, h5, h6 {
 
 #sidebar .sidebar > .more a{
     text-transform: uppercase;
-    color: #f37423;
+    color: #c4151c;
 }
 
 #sidebar ul{
@@ -317,7 +317,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-bottom ul li:first-child{
-    color: #004e44;
+    color: #c4151c;
     padding-bottom: 28px;
     font-size: 12px;
 }
@@ -370,7 +370,7 @@ div.nav-menu > ul {
 .nav-menu li:hover > a,
 .nav-menu li a:hover {
     background-color: #FFF;
-    color: #005645;
+    color: #c4161c;
 }
 
 .nav-menu .sub-menu,
