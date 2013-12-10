@@ -47,8 +47,10 @@
                 <div class="footer-top">
                     <div class="container">
                         <div class="row">
-                            <div class="span16">
-
+                            <div class="span16 text-center">
+                                <p>
+                                    UFRJ - Caixa Postal 68568 - CEP: 21941-972 Rio de Janeiro - RJ - Telefone: +55 (21) 3733-1951 / FAX +55 (21) 3867-6840
+                                </p>
                             </div>
                         </div>
                     </div>

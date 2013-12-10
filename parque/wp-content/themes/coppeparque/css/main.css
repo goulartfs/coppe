@@ -300,6 +300,13 @@ h2, h3, h4, h5, h6 {
     height: 33px;
 }
 
+#footer .footer-top p{
+    color: #313131;
+    font-size: 13px;
+    line-height: 38px;
+    margin-bottom: 0;
+}
+
 #footer .footer-bottom{
     background: #e2e2e2;
     padding: 10px 0;

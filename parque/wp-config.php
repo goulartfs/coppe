@@ -16,7 +16,7 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'coppe_parque');
 
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
