@@ -22,7 +22,7 @@ define('DB_NAME', 'coppe_parque');
 define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'lisatewr');
 
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
