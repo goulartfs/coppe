@@ -176,8 +176,8 @@ function umPageNavi( pageID, isNext, element ){
         checkingPage = parseInt(pageID) - 1;
         
         jQuery( formID + " #um_page_segment_" + checkingPage + " .um_input" ).each(function(){
-            fieldID = jQuery(this).attr("id");
-            error = jQuery(formID).validationEngine( "validateField", "#" + fieldID );           
+            fieldID = jQuery(this).attr("id");  
+            error = jQuery("#" + fieldID).validationEngine( "validate" );      
             if( error )
                 haveError = true;           
         });

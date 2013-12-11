@@ -32,8 +32,7 @@ class umValidationRule {
     
     function __construct( $rule, $value, $options=array() ) {
         $this->rule     = $rule;
-        $this->value    = trim( $value );
-        
+        $this->value    = is_string( $value ) ? trim( $value ) : $value;
         $this->options = $options;
     }
     
@@ -82,8 +81,15 @@ class umValidationRule {
         else {
             $this->setRegex();
             if ( ! empty( $this->regex ) ) {
-                if ( preg_match( $this->regex, $this->value ) )
-                    $isValid = true;
+                if( is_array( $this->value ) ){
+                    foreach( $this->value as $val ){
+                        if ( preg_match( $this->regex, $val ) )
+                            $isValid = true;
+                    }
+                }else{
+                    if ( preg_match( $this->regex, $this->value ) )
+                        $isValid = true;
+                }
             }else
                 $isValid = true;
         }

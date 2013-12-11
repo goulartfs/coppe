@@ -6,7 +6,7 @@ class umInitPlugin {
     function pluginInit(){
         global $userMeta;
         
-        $userMeta->isPro = false;
+        $userMeta->isPro = true;
         
         $userMeta->loadDirectory( $userMeta->modelsPath . 'classes/' );
         

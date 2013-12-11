@@ -203,7 +203,8 @@ h2, h3, h4, h5, h6 {
 }
 
 #content .content-pos{
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #DDDDDD;
+    margin-top: 25px;
     padding-top: 24px;
 }
 

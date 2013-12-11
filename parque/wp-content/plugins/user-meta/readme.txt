@@ -129,6 +129,8 @@ WordPress doesn't allow to register new user by default settings. To allow user 
 * Assign form to login widget.
 * Allow role based profile as widget.
 * Add all other feature of RC version.
+
+= 1.1.3rc3 =
 * Replace type=both into type=profile-registration
 * Replace type=none into type=public
 * type=public allow user_id as $_GET for showing public user profile.
@@ -146,6 +148,8 @@ WordPress doesn't allow to register new user by default settings. To allow user 
 * Check user access by “add_users” capability.
 * Clickable users listing for Active | Inactive | Pending | Pending Approval
 * Change email verification and reset password process.
+
+= 1.1.3rc2 =
 * WordPress-3.5 compatibility.
 * UMP Export-Import fields, forms, settings.
 * Role based profile showing.
@@ -163,6 +167,8 @@ WordPress doesn't allow to register new user by default settings. To allow user 
 * MU: New blog registration.
 * MU: Add user to blog.
 * MU: added option for prevent login for non-member for current blog.
+
+= 1.1.3rc1 =
 * Registration/Profile widget.
 * Registration/Profile Template Tag.
 * Extended users export.
