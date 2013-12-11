@@ -15,8 +15,8 @@
 			<?php get_sidebar( 'main' ); ?>
 
 			<div class="site-info">
-				<?php do_action( 'coppeparque_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'coppeparque' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'coppeparque' ); ?>"><?php printf( __( 'Proudly powered by %s', 'coppeparque' ), 'WordPress' ); ?></a>
+				<?php do_action( 'coppeincubadora_credits' ); ?>
+				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'coppeincubadora' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'coppeincubadora' ); ?>"><?php printf( __( 'Proudly powered by %s', 'coppeincubadora' ), 'WordPress' ); ?></a>
 			</div> .site-info 
 		</footer> #colophon 
 	</div> #page 
