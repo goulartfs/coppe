@@ -127,7 +127,11 @@ function coppeparque_scripts_styles() {
 		wp_enqueue_script( 'jquery-masonry' );
 
 	// Loads JavaScript file with functionality specific to Coppe Parque.
-	wp_enqueue_script( 'coppeparque-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '2013-07-18', true );
+	wp_enqueue_script( 'coppeparque-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery', 'jquery-ui-core' ), '2013-07-18', true );
+    wp_enqueue_script('cooppeparque-mousewheel', get_template_directory_uri() . '/js/jquery.mousewheel.min.js', array(), '2013-12-13');
+    wp_enqueue_script('cooppeparque-mCustomScrollbar', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.min.js', array(), '2013-12-13');
+    wp_enqueue_script('cooppeparque-jcarousel', get_template_directory_uri() . '/js/jcarousel.min.js', array(), '2013-12-13');
+    wp_enqueue_script('cooppeparque-usquare', get_template_directory_uri() . '/js/jquery.usquare.js', array(), '2013-12-13');
 
 	// Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
 	wp_enqueue_style( 'coppeparque-fonts', coppeparque_fonts_url(), array(), null );
@@ -140,7 +144,14 @@ function coppeparque_scripts_styles() {
 
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'coppeparque-bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array( 'coppeparque-style' ), '2013-07-18' );
-	wp_enqueue_style( 'coppeparque-main', get_template_directory_uri() . '/css/main.css', array( 'coppeparque-style' ), '2013-07-18' );
+	wp_enqueue_style( 'coppeparque-usquare_style', get_template_directory_uri() . '/css/usquare_style.css', array( 'coppeparque-style' ), '2013-12-13' );
+	wp_enqueue_style( 'coppeparque-mCustomScrollbar', get_template_directory_uri() . '/css/jquery.mCustomScrollbar.css', array( 'coppeparque-style' ), '2013-12-13' );
+	wp_enqueue_style( 'coppeparque-jcarousel', get_template_directory_uri() . '/css/jcarousel.css', array( 'coppeparque-style' ), '2013-12-13' );
+    wp_enqueue_style( 'coppeparque-main', get_template_directory_uri() . '/css/main.css', array( 'coppeparque-style' ), '2013-07-18' );
+    if(is_page_template('template-equipe.php')){
+        wp_enqueue_script('cooppeparque-equipe', get_template_directory_uri() . '/js/equipe.js', array(), '2013-12-13');
+        wp_enqueue_style( 'coppeparque-equipe', get_template_directory_uri() . '/css/equipe.css', array( 'coppeparque-style' ), '2013-12-13' );
+    }
 //	wp_enqueue_style( 'coppeparque-ie', get_template_directory_uri() . '/css/ie.css', array( 'coppeparque-style' ), '2013-07-18' );
 //	wp_style_add_data( 'coppeparque-ie', 'conditional', 'lt IE 9' );
 }

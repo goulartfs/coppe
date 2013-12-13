@@ -1,4 +1,4 @@
-<?php /* Template Name: Projetos */ ?>
+<?php /* Template Name: Parceiros e Filiações */ ?>
 <?php
 /**
  * The main template file
@@ -70,12 +70,12 @@ get_header();
                 <?php endif; ?>
 
                 <?php
-                $args = array( 'post_type' => 'projeto', 'posts_per_page' => 10 );
+                $args = array( 'post_type' => 'parceiros', 'posts_per_page' => 10 );
                 $loop = new WP_Query( $args );
                 ?>
                 <script>
                     jQuery(function(){
-                        jQuery('.projeto-content').not(':first').hide();
+//                        jQuery('.projeto-content').not(':first').hide();
                         jQuery('h2').click(function(){
                             if(jQuery(this).next().is(':hidden')){
                                 jQuery('.projeto-content').slideUp();
@@ -92,7 +92,15 @@ get_header();
                             <?php //get_template_part('content', get_post_format()); ?>
                             <h2><?php the_title() ?></h2>
                             <div class="projeto-content">
-                                <?php the_content() ?>
+                                <div class="row">
+                                    <div class="span2"><?php the_post_thumbnail(array(100,100), array('class' => 'thumbnail text-center')) ?></div>
+                                    <div class="span10">
+                                        <?php the_excerpt() ?>
+                                        <?php if(get_field('link')){ ?>
+                                            <a href="<?php the_field('link') ?>" target="_blank"><?php the_field('link') ?></a>
+                                        <?php } ?>
+                                    </div>
+                                </div>
                             </div>
                         <?php endwhile; ?>
                     </div>
