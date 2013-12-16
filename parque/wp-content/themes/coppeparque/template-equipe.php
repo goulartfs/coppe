@@ -94,9 +94,11 @@ get_header();
                                         <div class="clear"></div>
                                         <h2><?php print $user->display_name ?></h2>
                                         <span><?php print $user->cargo ?></span>
-                                        <p>
+                                        <div class="short-description">
+                                            <p>
                                             <?php print $user->description ?>
-                                        </p>
+                                            </p>
+                                        </div>
                                         <ul class="social_background inline">
                                             <?php if($user->user_email): ?><li><a href="<?php print $user->user_email ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/bt-email.jpg" alt="social" /></a></li><?php endif; ?>
                                             <?php if($user->facebook): ?><li><a href="<?php print $user->facebook ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/bt-email.jpg" alt="social" /></a></li><?php endif; ?>
