@@ -22,9 +22,12 @@ h1{
     font-size: 30px;
 }
 
-.page-template-template-parceiro-php h1,
-.page-template-template-parceiro-php h3 {
+h1.sub-title,
+.page-template-template-parceiro-php #content .content  h3 {
     margin-top: 40px;
+}
+h1.sub-title.first{
+    margin-top: 0;
 }
 
 h2{

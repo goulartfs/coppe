@@ -82,7 +82,7 @@ get_header();
                 $loop = new WP_Query( $args );
                 ?>
                 <?php if ($loop->have_posts()) : ?>
-                    <h1>Parceiros</h1>
+                    <h1 class="sub-title first">Parceiros</h1>
                     <?php /* The loop */ ?>
                     <div class="projetos-acordion">
                         <?php while ($loop->have_posts()) : $loop->the_post(); ?>
@@ -113,7 +113,7 @@ get_header();
                 $loop = new WP_Query( $args );
                 ?>
                 <?php if ($loop->have_posts()) : ?>
-                    <h1>Filiações</h1>
+                    <h1 class="sub-title">Filiações</h1>
                     <?php /* The loop */ ?>
                     <div class="projetos-acordion">
                         <?php while ($loop->have_posts()) : $loop->the_post(); ?>
