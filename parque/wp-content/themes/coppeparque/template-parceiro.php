@@ -55,7 +55,7 @@ get_header();
     <div class="row">
     <div class="span12">
         <div class="row">
-            <div class="span12">
+            <div class="span12 content-area">
                 <?php if (have_posts()) : ?>
 
                     <?php /* The loop */ ?>
@@ -72,7 +72,7 @@ get_header();
                 <script>
                     jQuery(function(){
                         jQuery('.projeto-content').not(':first').hide();
-                        jQuery('h2').click(function(){
+                        jQuery('.content-area h2').click(function(){
                             jQuery(this).nextUntil('h2').slideToggle();
                         })
                     })
