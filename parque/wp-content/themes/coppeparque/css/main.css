@@ -32,8 +32,13 @@ h2{
     border-bottom: 1px dashed #bbbbbb;
 }
 
+.content h2:first-child{
+    margin-top: 0;
+}
+
 h3{
     font-size: 18px;
+    border-bottom: 1px dashed #BBBBBB;
 }
 
 h4{
@@ -204,7 +209,11 @@ h2, h3, h4, h5, h6 {
     font-size: 13px;
     color: #555555;
     line-height: 20px;
-    margin-top: 25px;
+    margin-top: 10px;
+}
+
+#content .content .pre-content{
+    margin-bottom: 15px;
 }
 
 #content .content-pos{
