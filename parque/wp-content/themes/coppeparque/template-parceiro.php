@@ -69,10 +69,6 @@ get_header();
                     <?php get_template_part('content', 'none'); ?>
                 <?php endif; ?>
 
-                <?php
-                $args = array( 'post_type' => 'parceiros', 'posts_per_page' => -1, 'meta_key'=>'tipo', 'meta_value'=>'Parceiro' );
-                $loop = new WP_Query( $args );
-                ?>
                 <script>
                     jQuery(function(){
 //                        jQuery('.projeto-content').not(':first').hide();
@@ -84,8 +80,43 @@ get_header();
                         })
                     })
                 </script>
+                <?php
+                $args = array( 'post_type' => 'parceiros', 'posts_per_page' => -1, 'meta_key'=>'tipo', 'meta_value'=>'Parceiro' );
+                $loop = new WP_Query( $args );
+                ?>
                 <?php if ($loop->have_posts()) : ?>
+                    <h1>Parceiros</h1>
+                    <?php /* The loop */ ?>
+                    <div class="projetos-acordion">
+                        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                            <?php //get_template_part('content', get_post_format()); ?>
+                            <h2><?php the_title() ?></h2>
+                            <div class="projeto-content">
+                                <div class="row">
+                                    <div class="span2"><?php the_post_thumbnail(array(100,100), array('class' => 'thumbnail text-center')) ?></div>
+                                    <div class="span10">
+                                        <?php the_excerpt() ?>
+                                        <?php if(get_field('link')){ ?>
+                                            <a href="<?php the_field('link') ?>" target="_blank"><?php the_field('link') ?></a>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    </div>
 
+                    <?php coppeparque_paging_nav(); ?>
+
+                <?php else : ?>
+                    <?php //get_template_part('content', 'none'); ?>
+                <?php endif; ?>
+
+                <?php
+                $args = array( 'post_type' => 'parceiros', 'posts_per_page' => -1, 'meta_key'=>'tipo', 'meta_value'=>'Filiação' );
+                $loop = new WP_Query( $args );
+                ?>
+                <?php if ($loop->have_posts()) : ?>
+                    <h1>Filiações</h1>
                     <?php /* The loop */ ?>
                     <div class="projetos-acordion">
                         <?php while ($loop->have_posts()) : $loop->the_post(); ?>
