@@ -71,11 +71,7 @@ get_header();
 
                 <script>
                     jQuery(function(){
-//                        jQuery('.projeto-content').not(':first').hide();
                         jQuery('h2').click(function(){
-                            if(jQuery(this).next().is(':hidden')){
-                                jQuery('.projeto-content').slideUp();
-                            }
                             jQuery(this).nextUntil('h2').slideToggle();
                         })
                     })
