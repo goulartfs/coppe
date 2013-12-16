@@ -70,7 +70,7 @@ get_header();
                 <?php endif; ?>
 
                 <?php
-                $args = array( 'post_type' => 'parceiros', 'posts_per_page' => 10 );
+                $args = array( 'post_type' => 'parceiros', 'tipo'=>'Parceiro', 'posts_per_page' => 10 );
                 $loop = new WP_Query( $args );
                 ?>
                 <script>
