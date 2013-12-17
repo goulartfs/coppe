@@ -550,3 +550,12 @@ img.wp-smiley,
     margin-top: 40px;
     padding-top: 8px !important;
 }
+
+#content .timeline .timeline_items .item > img{
+    border-bottom: 5px solid #01362C;
+}
+#content .timeline h2{
+    border: none;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
