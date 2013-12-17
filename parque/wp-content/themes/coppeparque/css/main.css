@@ -314,12 +314,12 @@ h2, h3, h4, h5, h6 {
     color: #f37423;
 }
 
-#sidebar ul{
+#sidebar ul, .content-area ul{
     margin-left: 0px;
     list-style: none;
 }
 
-#sidebar ul li{
+#sidebar ul li, .content-area ul li{
     background: url("../images/bullet.png") no-repeat scroll 0 3px transparent;
     margin-left: 0;
     padding-left: 19px;
