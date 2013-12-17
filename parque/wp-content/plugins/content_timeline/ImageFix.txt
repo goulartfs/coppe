@@ -1,0 +1,14 @@
+There are 2 usual issues regarding images:
+
+1. Image popup doesn't show (when you click "change" button your screen darkens and nothing happens)
+FIX: Open your theme "function.php" and at the beginning of the file (before <?php) insert paste this: <?php define('CONCATENATE_SCRIPTS',false); ?>
+
+2. When you click "insert into post" images don't appear in the field
+FIX: Open your FTP client and in folder "content_timeline/timthumb" set "cache" permissions to 711, and "timthumb.php" permissions to 701
+
+
+If you have some problems with it don't hesitate to contact us via form on:
+http://codecanyon.net/user/Br0
+
+Kind regards,
+Br0
