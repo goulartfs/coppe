@@ -83,6 +83,7 @@ h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
 #header .header-top{
     background: url("../images/header-top.jpg") repeat-x scroll 0 0 transparent;
 }
@@ -528,4 +529,24 @@ img.wp-smiley,
 .wp-caption.alignleft + ul,
 .wp-caption.alignleft + ol  {
     list-style-position: inside;
+}
+
+/***
+*   TimeLine
+*/
+
+
+.t_line_month{
+    visibility: hidden;
+}
+
+.timeline a.t_line_node, #content .timeline a.t_line_node {
+    font-size: 19px;
+    padding: 0 0 30px 10px;
+    top: -25px;
+}
+
+.t_node_desc{
+    margin-top: 40px;
+    padding-top: 8px !important;
 }
