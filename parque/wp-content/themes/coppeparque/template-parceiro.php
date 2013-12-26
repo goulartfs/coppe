@@ -71,10 +71,10 @@ get_header();
 
                 <script>
                     jQuery(function(){
-                        jQuery('.projeto-content').not(':first').hide();
-                        jQuery('.content-area h2').click(function(){
-                            jQuery(this).nextUntil('h2').slideToggle();
-                        })
+                        jQuery('.projetos-acordion').not(':first').hide();
+                        jQuery('.content-area h1').click(function(){
+                            jQuery(this).nextUntil('h1').slideToggle();
+                        }).css('cursor','pointer').css('margin-bottom','0');
                     })
                 </script>
                 <?php
