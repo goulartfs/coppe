@@ -326,6 +326,12 @@ h2, h3, h4, h5, h6 {
     margin-top: 25px;
 }
 
+.content-area ul.social_background li{
+    background: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
 #sidebar ul li:first-child{
     margin-top: 0;
 }
