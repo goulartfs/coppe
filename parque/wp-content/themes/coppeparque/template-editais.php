@@ -115,13 +115,13 @@ get_header();
                                     $more = 0;
                                     ?>
                                     <div class="edital-content">
-                                        <?php the_content('Leia mais...'); ?>
+                                        <?php the_content('<span data-target="' . get_the_ID() . '">Leia mais...</span>'); ?>
                                     </div>
                                     <?php
                                     global $more;
                                     $more = 1;
                                     ?>
-                                    <div class="pos-more">
+                                    <div class="pos-more" rel="<?php the_ID() ?>">
                                         <?php the_content('', true, ''); ?>
                                     </div>
                                 </div>
@@ -149,7 +149,7 @@ get_header();
                     jQuery('.pos-more').fadeOut();
                     jQuery('.more-link').removeClass('active');
                 }
-                jQuery(this).parents('div[class|="edital"]').find('.pos-more').fadeToggle();
+                jQuery('.pos-more[rel=' + jQuery(this).find('span').data('target') + ']').fadeToggle();
                 jQuery(this).toggleClass('active');
             })
         })
