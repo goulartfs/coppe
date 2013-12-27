@@ -318,6 +318,10 @@ a.more-link.active, .flit.active{
     padding-right: 25px;
 }
 
+.projeto-content .span10{
+    width: 600px;
+}
+
 #sidebar h2:first-child{
     margin-top: 0;
 }
