@@ -20,7 +20,7 @@ get_header();
 <?php if (!is_home() && !is_search()) { ?>
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-            <?php if (is_page() ) : ?>
+            <?php if (is_page()) : ?>
                 <div class="content-header">
                     <div class="container">
                         <div class="row">
@@ -37,8 +37,7 @@ get_header();
                         <div class="span16">
                             <div class="breadcrumb">
                                 <?php
-                                if(function_exists('bcn_display'))
-                                {
+                                if (function_exists('bcn_display')) {
                                     bcn_display();
                                 }
                                 ?>
@@ -56,53 +55,55 @@ get_header();
     <div class="span12">
         <div class="row">
             <div class="span12 content-area">
-                <?php if (have_posts()) : ?>
+                <div class="wrapper">
+                    <?php if (have_posts()) : ?>
 
-                    <?php /* The loop */ ?>
-                    <?php while (have_posts()) : the_post(); ?>
-                        <?php get_template_part('content', get_post_format()); ?>
-                    <?php endwhile; ?>
-
-                    <?php coppeparque_paging_nav(); ?>
-
-                <?php else : ?>
-                    <?php get_template_part('content', 'none'); ?>
-                <?php endif; ?>
-
-                <?php
-                $args = array( 'post_type' => 'projeto', 'posts_per_page' => 10 );
-                $loop = new WP_Query( $args );
-                ?>
-                <script>
-                    jQuery(function(){
-                        jQuery('.projeto-content').not(':first').hide();
-                        jQuery('.content-area h2').click(function(){
-                            if(jQuery(this).next().is(':hidden')){
-                                jQuery('.projeto-content').slideUp();
-                            }
-                            jQuery(this).nextUntil('h2').slideToggle();
-                        })
-                    })
-                </script>
-                <?php if ($loop->have_posts()) : ?>
-
-                    <?php /* The loop */ ?>
-                    <div class="projetos-acordion">
-                        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                            <?php //get_template_part('content', get_post_format()); ?>
-                            <h2><?php the_title() ?></h2>
-                            <div class="projeto-content">
-                                <?php the_content() ?>
-                            </div>
+                        <?php /* The loop */ ?>
+                        <?php while (have_posts()) : the_post(); ?>
+                            <?php get_template_part('content', get_post_format()); ?>
                         <?php endwhile; ?>
-                    </div>
 
-                    <?php coppeparque_paging_nav(); ?>
+                        <?php coppeparque_paging_nav(); ?>
 
-                <?php else : ?>
-                    <?php //get_template_part('content', 'none'); ?>
-                <?php endif; ?>
+                    <?php else : ?>
+                        <?php get_template_part('content', 'none'); ?>
+                    <?php endif; ?>
 
+                    <?php
+                    $args = array('post_type' => 'projeto', 'posts_per_page' => 10);
+                    $loop = new WP_Query($args);
+                    ?>
+                    <script>
+                        jQuery(function () {
+                            jQuery('.projeto-content').not(':first').hide();
+                            jQuery('.content-area h2').click(function () {
+                                if (jQuery(this).next().is(':hidden')) {
+                                    jQuery('.projeto-content').slideUp();
+                                }
+                                jQuery(this).nextUntil('h2').slideToggle();
+                            })
+                        })
+                    </script>
+                    <?php if ($loop->have_posts()) : ?>
+
+                        <?php /* The loop */ ?>
+                        <div class="projetos-acordion">
+                            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                                <?php //get_template_part('content', get_post_format()); ?>
+                                <h2><?php the_title() ?></h2>
+                                <div class="projeto-content">
+                                    <?php the_content() ?>
+                                </div>
+                            <?php endwhile; ?>
+                        </div>
+
+                        <?php coppeparque_paging_nav(); ?>
+
+                    <?php else : ?>
+                        <?php //get_template_part('content', 'none'); ?>
+                    <?php endif; ?>
+
+                </div>
             </div>
         </div>
     </div>
