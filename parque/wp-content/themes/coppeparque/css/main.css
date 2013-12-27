@@ -97,8 +97,24 @@ a.more-link {
     outline: none;
 }
 
-a.more-link.active{
-    background-position: right -28px;
+.flit{
+    background: url("../images/seta_flit.png") no-repeat scroll right -3px rgba(0, 0, 0, 0);
+}
+
+h1.flit{
+    background: url("../images/seta_flit.png") no-repeat scroll right 9px rgba(0, 0, 0, 0);
+}
+
+h2.flit{
+    background: url("../images/seta_flit.png") no-repeat scroll right 5px rgba(0, 0, 0, 0);
+}
+
+h1.flit.active, h2.flit.active{
+    background-position: right -53px;
+}
+
+a.more-link.active, .flit.active{
+    background-position: right -62px;
 }
 
 #header .header-top{

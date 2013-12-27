@@ -74,6 +74,7 @@ get_header();
                             jQuery('.projetos-acordion').not(':first').hide();
                             jQuery('.content-area h1').click(function () {
                                 jQuery(this).nextUntil('h1').slideToggle();
+                                jQuery(this).toggleClass('active');
                             }).css('cursor', 'pointer').css('margin-bottom', '0');
                         })
                     </script>
@@ -82,7 +83,7 @@ get_header();
                     $loop = new WP_Query($args);
                     ?>
                     <?php if ($loop->have_posts()) : ?>
-                        <h1 class="sub-title first">Parceiros</h1>
+                        <h1 class="sub-title first flit active">Parceiros</h1>
                         <?php /* The loop */ ?>
                         <div class="projetos-acordion">
                             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
@@ -115,7 +116,7 @@ get_header();
                     $loop = new WP_Query($args);
                     ?>
                     <?php if ($loop->have_posts()) : ?>
-                        <h1 class="sub-title">Filiações</h1>
+                        <h1 class="sub-title flit">Filiações</h1>
                         <?php /* The loop */ ?>
                         <div class="projetos-acordion">
                             <?php while ($loop->have_posts()) : $loop->the_post(); ?>

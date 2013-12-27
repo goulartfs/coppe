@@ -76,9 +76,12 @@ get_header();
                     <script>
                         jQuery(function () {
                             jQuery('.projeto-content').not(':first').hide();
+                            jQuery('.content-area h2:first').addClass('active');
                             jQuery('.content-area h2').click(function () {
+                                jQuery('.active').removeClass('active');
                                 if (jQuery(this).next().is(':hidden')) {
                                     jQuery('.projeto-content').slideUp();
+                                    jQuery(this).toggleClass('active');
                                 }
                                 jQuery(this).nextUntil('h2').slideToggle();
                             })
@@ -90,7 +93,7 @@ get_header();
                         <div class="projetos-acordion">
                             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                                 <?php //get_template_part('content', get_post_format()); ?>
-                                <h2><?php the_title() ?></h2>
+                                <h2 class="flit"><?php the_title() ?></h2>
                                 <div class="projeto-content">
                                     <?php the_content() ?>
                                 </div>
