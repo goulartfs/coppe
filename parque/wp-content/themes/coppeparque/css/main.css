@@ -84,6 +84,23 @@ h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+a.more-link {
+    background: url("../images/seta_flit.png") no-repeat scroll right -3px rgba(0, 0, 0, 0);
+    color: #005141;
+    display: block;
+    font-family: Proxima-Regular;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 15px 0;
+    padding-right: 26px;
+    text-align: right;
+    outline: none;
+}
+
+a.more-link.active{
+    background-position: right -28px;
+}
+
 #header .header-top{
     background: url("../images/header-top.jpg") repeat-x scroll 0 0 transparent;
 }
@@ -239,6 +256,10 @@ h2, h3, h4, h5, h6 {
 
 #content .content .pre-content{
     margin-bottom: 15px;
+}
+
+.pos-more > *:first-child{
+    margin: 0;
 }
 
 #content .content-pos{
