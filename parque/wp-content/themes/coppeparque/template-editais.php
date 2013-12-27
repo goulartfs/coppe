@@ -78,7 +78,7 @@ get_header();
                                 'value' => date('Ymd'),
                                 'type' => 'date',
                                 'compare' => '<='
-                            ),array(
+                            ), array(
                                 'key' => 'data_fim',
                                 'value' => date('Ymd'),
                                 'type' => 'date',
@@ -145,9 +145,12 @@ get_header();
             jQuery('.pos-more').hide();
             jQuery('.more-link').click(function (e) {
                 e.preventDefault();
-                console.log(jQuery(this).parent('div[class|="edital"]'));
-                jQuery(this).toggleClass('active');
+                if (!jQuery(this).hasClass('active')) {
+                    jQuery('.pos-more').fadeOut();
+                    jQuery('.more-link').removeClass('active');
+                }
                 jQuery(this).parents('div[class|="edital"]').find('.pos-more').fadeToggle();
+                jQuery(this).toggleClass('active');
             })
         })
     </script>
