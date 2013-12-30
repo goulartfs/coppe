@@ -18,23 +18,28 @@
                 <?php if ($user->user_email): ?>
                     <li><a href="mailto:<?php print $user->user_email ?>"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/bt-email.jpg"
-                            alt="social"/></a></li><?php endif; ?>
+                            alt="E-mail"
+                            target="_blank"/></a></li><?php endif; ?>
                 <?php if ($user->facebook): ?>
                     <li><a href="<?php print $user->facebook ?>"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/icon_facebook.png"
-                            alt="social"/></a></li><?php endif; ?>
+                            alt="Facebook"
+                            target="_blank"/></a></li><?php endif; ?>
                 <?php if ($user->google): ?>
                     <li><a href="<?php print $user->google ?>"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/icon_google.png"
-                            alt="social"/></a></li><?php endif; ?>
+                            alt="Google+"
+                            target="_blank"/></a></li><?php endif; ?>
                 <?php if ($user->twitter): ?>
                     <li><a href="<?php print $user->twitter ?>"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/icon_twitter.png"
-                            alt="social"/></a></li><?php endif; ?>
+                            alt="Twitter"
+                            target="_blank"/></a></li><?php endif; ?>
                 <?php if ($user->linkedin): ?>
                     <li><a href="<?php print $user->linkedin ?>"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/icon_linkedin.png"
-                            alt="social"/></a></li><?php endif; ?>
+                            alt="Linkedin"
+                            target="_blank"/></a></li><?php endif; ?>
             </ul>
             <div class="clear"></div>
         </div>
