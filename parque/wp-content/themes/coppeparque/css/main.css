@@ -318,8 +318,27 @@ a.more-link.active, .flit.active{
     padding-right: 25px;
 }
 
-.projeto-content .span10{
+.projeto-content .span10, .oportunidade-block .span10{
     width: 600px;
+}
+
+.oportunidade-block{
+    margin-top: 25px;
+}
+
+.vaga-item{
+    margin-bottom: 25px;
+}
+
+.vaga-content h2{
+    font-size: 15px;
+}
+.vaga-content h3{
+    font-size: 13px;
+}
+
+.vaga-block h3{
+    margin-top: 0;
 }
 
 #sidebar h2:first-child{

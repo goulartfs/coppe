@@ -70,28 +70,65 @@ get_header();
                     <?php endif; ?>
 
                     <?php
-                    $args = array('post_type' => 'projeto', 'posts_per_page' => 10);
+                    $args = array('post_type' => 'oportunidade', 'posts_per_page' => 10);
                     $loop = new WP_Query($args);
                     if ($loop->have_posts()) :
-                        ?>
+                    ?>
+                    <h2>Vagas Oferecidas</h2>
 
+                    <div class="oportunidade-block">
                         <?php /* The loop */ ?>
-                        <div class="projetos-acordion">
-                            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                                <?php //get_template_part('content', get_post_format()); ?>
-                                <h2><?php the_title() ?></h2>
-                                <div class="projeto-content">
-                                    <?php the_content() ?>
+                        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                            <div class="vaga-item">
+                                <?php
+                                $vaga['title'] = get_the_title();
+                                $vaga['content'] = get_the_content();
+                                ?>
+                                <?php $post = get_field('empresa_residente'); ?>
+                                <?php setup_postdata($post); ?>
+                                <?php $img = get_field('logomarca'); ?>
+                                <div class="row">
+                                    <div class="span2">
+                                        <?php if ($img): ?>
+                                            <a href="<?php the_field('link'); ?>" target="_blank">
+                                                <img class="thumbnail"
+                                                     src="<?php print $img['url'] ?>"
+                                                     alt="<?php the_title(); ?>"/>
+                                            </a>
+                                        <?php else: ?>
+                                            <img class="thumbnail" src="http://placehold.it/110x110&text=blank"/>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="span10">
+                                        <?php if(get_the_title()): ?>
+                                            <h2><?php the_title() ?></h2>
+                                        <?php endif; ?>
+
+                                        <div class="vaga-block">
+                                            <h3><?php print $vaga['title'] ?></h3>
+
+                                            <div class="vaga-content">
+                                                <?php print $vaga['content'] ?>
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <a href="#">
+                                                <button class="btn btn-info">Cadastre-se</button>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            <?php endwhile; ?>
-                        </div>
+                            </div>
+                        <?php endwhile; ?>
 
                         <?php coppeparque_paging_nav(); ?>
 
-                    <?php else : ?>
-                        <?php //get_template_part('content', 'none'); ?>
-                    <?php endif; ?>
-
+                        <?php else : ?>
+                            <?php //get_template_part('content', 'none'); ?>
+                        <?php
+                        endif;
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>

@@ -91,8 +91,7 @@ get_header();
                                 <h2><?php the_title() ?></h2>
                                 <div class="projeto-content">
                                     <div class="row">
-                                        <div
-                                            class="span2"><?php the_post_thumbnail(array(100, 100), array('class' => 'thumbnail text-center')) ?></div>
+                                        <div class="span2"><?php the_post_thumbnail(array(100, 100), array('class' => 'thumbnail text-center')) ?></div>
                                         <div class="span10">
                                             <?php the_excerpt() ?>
                                             <?php if (get_field('link')) { ?>
