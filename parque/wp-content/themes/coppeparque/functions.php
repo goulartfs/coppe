@@ -152,6 +152,7 @@ function coppeparque_scripts_styles() {
         wp_enqueue_script('cooppeparque-equipe', get_template_directory_uri() . '/js/equipe.js', array(), '2013-12-13');
         wp_enqueue_style( 'coppeparque-equipe', get_template_directory_uri() . '/css/equipe.css', array( 'coppeparque-style' ), '2013-12-13' );
     }
+    wp_enqueue_script('cooppeparque-main', get_template_directory_uri() . '/js/main.js', array(), '2014-01-01');
 //	wp_enqueue_style( 'coppeparque-ie', get_template_directory_uri() . '/css/ie.css', array( 'coppeparque-style' ), '2013-07-18' );
 //	wp_style_add_data( 'coppeparque-ie', 'conditional', 'lt IE 9' );
 }

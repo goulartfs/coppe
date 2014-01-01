@@ -112,7 +112,7 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="text-right">
-                                            <a href="#">
+                                            <a href="?page_id=382&er=<?php print urlencode(get_the_title()) ?>&o=<?php print urlencode($vaga['title']) ?>&e=<?php print urlencode(get_field('email')) ?>">
                                                 <button class="btn btn-info">Cadastre-se</button>
                                             </a>
                                         </div>
