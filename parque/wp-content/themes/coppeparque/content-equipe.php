@@ -16,30 +16,25 @@
             </div>
             <ul class="social_background inline">
                 <?php if ($user->user_email): ?>
-                    <li><a href="mailto:<?php print $user->user_email ?>"><img
+                    <li><a href="mailto:<?php print $user->user_email ?>" target="_blank"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/bt-email.jpg"
-                            alt="E-mail"
-                            target="_blank"/></a></li><?php endif; ?>
+                            alt="E-mail"/></a></li><?php endif; ?>
                 <?php if ($user->facebook): ?>
-                    <li><a href="<?php print $user->facebook ?>"><img
+                    <li><a href="<?php print $user->facebook ?>" target="_blank"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/icon_facebook.png"
-                            alt="Facebook"
-                            target="_blank"/></a></li><?php endif; ?>
+                            alt="Facebook"/></a></li><?php endif; ?>
                 <?php if ($user->google): ?>
-                    <li><a href="<?php print $user->google ?>"><img
+                    <li><a href="<?php print $user->google ?>" target="_blank"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/icon_google.png"
-                            alt="Google+"
-                            target="_blank"/></a></li><?php endif; ?>
+                            alt="Google+"/></a></li><?php endif; ?>
                 <?php if ($user->twitter): ?>
-                    <li><a href="<?php print $user->twitter ?>"><img
+                    <li><a href="<?php print $user->twitter ?>" target="_blank"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/icon_twitter.png"
-                            alt="Twitter"
-                            target="_blank"/></a></li><?php endif; ?>
+                            alt="Twitter"/></a></li><?php endif; ?>
                 <?php if ($user->linkedin): ?>
-                    <li><a href="<?php print $user->linkedin ?>"><img
+                    <li><a href="<?php print $user->linkedin ?>" target="_blank"><img
                             src="<?php echo get_template_directory_uri(); ?>/images/icon_linkedin.png"
-                            alt="Linkedin"
-                            target="_blank"/></a></li><?php endif; ?>
+                            alt="Linkedin"/></a></li><?php endif; ?>
             </ul>
             <div class="clear"></div>
         </div>
