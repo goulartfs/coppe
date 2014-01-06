@@ -1,4 +1,4 @@
-<?php /* Template Name: Projetos */ ?>
+<?php /* Template Name: Projetos Jogos */ ?>
 <?php
 /**
  * The main template file
@@ -63,14 +63,14 @@ get_header();
                             <?php get_template_part('content', get_post_format()); ?>
                         <?php endwhile; ?>
 
-                        <?php coppeparque_paging_nav(); ?>
+                        <?php coppeincubadora_paging_nav(); ?>
 
                     <?php else : ?>
                         <?php get_template_part('content', 'none'); ?>
                     <?php endif; ?>
 
                     <?php
-                    $args = array('post_type' => 'projeto', 'posts_per_page' => 10);
+                    $args = array('post_type' => 'projeto-jogos', 'posts_per_page' => 10);
                     $loop = new WP_Query($args);
                     ?>
                     <script>
@@ -100,7 +100,7 @@ get_header();
                             <?php endwhile; ?>
                         </div>
 
-                        <?php coppeparque_paging_nav(); ?>
+                        <?php coppeincubadora_paging_nav(); ?>
 
                     <?php else : ?>
                         <?php //get_template_part('content', 'none'); ?>
