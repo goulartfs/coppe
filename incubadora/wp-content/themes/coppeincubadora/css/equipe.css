@@ -1,0 +1,122 @@
+.usquare_module_wrapper h2 {
+    border-bottom: medium none;
+    color: #c4151c;
+    font-family: Proxima-Regular;
+    font-size: 18px;
+    line-height: 17px;
+    margin: 20px 0 0;
+    text-transform: none;
+}
+
+.usquare_module_wrapper span {
+    border-bottom: 1px solid #C5C5C5;
+    font-family: Proxima-Regular;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    text-transform: capitalize;
+}
+
+.usquare_square_text_wrapper{
+    top: 0;
+}
+
+
+.usquare_module_wrapper {
+    position: relative;
+    width: 760px;
+    height: 520px;
+}
+
+.usquare_block {
+    background-color: #FFFFFF;
+    float: left;
+    height: 160px;
+    position: relative;
+    text-align: left;
+    width: 380px;
+    margin-bottom: 70px;
+}
+
+img.usquare_square {
+    background-color: #FFFFFF;
+    margin-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+
+.usquare_square {
+    display: block;
+    float: left;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    width: 160px;
+}
+
+div.usquare_square{
+    width: 195px;
+    border-bottom-width: 0;
+    margin-bottom: 0;
+    margin-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.usquare_block_extended{
+    width: 380px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    height: 260px;
+}
+
+.usquare_block_selected{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.usquare_module_shade {
+    background-color: transparent;
+}
+
+
+.usquare_block_extended .close {
+    cursor: pointer;
+    left: 362px;
+    position: absolute;
+    top: 4px;
+    opacity: 1;
+}
+
+.usquare_block_extended .usquare_about {
+    font-family: Proxima-Regular;
+    color: #555555;
+    font-size: 13px;
+    height: 200px;
+}
+
+.social_background{
+    display: none;
+}
+
+.usquare_block_selected .social_background{
+    display: block;
+}
+
+.usquare_module_wrapper .bold {
+    visibility: hidden;
+}
+
+.mCustomScrollBox .mCSB_scrollTools, .mCSB_scrollTools .mCSB_draggerRail {
+    width: 6px;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #c4151c;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: none repeat scroll 0 0 #C5C5C5;
+}

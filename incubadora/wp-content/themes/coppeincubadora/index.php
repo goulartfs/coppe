@@ -45,7 +45,8 @@ get_header();
             <div class="row">
                 <div class="span12">
                     <div class="row">
-                        <div class="span12">
+                        <div class="span12 content-area">
+                            <div class="wrapper">
 
                             <?php if (have_posts()) : ?>
 
@@ -59,7 +60,7 @@ get_header();
                             <?php else : ?>
                                 <?php get_template_part('content', 'none'); ?>
                             <?php endif; ?>
-
+                            </div>
                         </div>
                     </div>
                 </div>

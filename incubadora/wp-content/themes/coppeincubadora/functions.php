@@ -128,6 +128,10 @@ function coppeincubadora_scripts_styles() {
 
 	// Loads JavaScript file with functionality specific to Coppe Incubadora.
 	wp_enqueue_script( 'coppeincubadora-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '2013-07-18', true );
+    wp_enqueue_script('coppeincubadora-mousewheel', get_template_directory_uri() . '/js/jquery.mousewheel.min.js', array(), '2013-12-13');
+    wp_enqueue_script('coppeincubadora-mCustomScrollbar', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.min.js', array(), '2013-12-13');
+    wp_enqueue_script('coppeincubadora-jcarousel', get_template_directory_uri() . '/js/jcarousel.min.js', array(), '2013-12-13');
+    wp_enqueue_script('coppeincubadora-usquare', get_template_directory_uri() . '/js/jquery.usquare.js', array(), '2013-12-13');
 
 	// Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
 	wp_enqueue_style( 'coppeincubadora-fonts', coppeincubadora_fonts_url(), array(), null );
@@ -140,7 +144,16 @@ function coppeincubadora_scripts_styles() {
 
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'coppeincubadora-bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array( 'coppeincubadora-style' ), '2013-07-18' );
+    wp_enqueue_style( 'coppeincubadora-usquare_style', get_template_directory_uri() . '/css/usquare_style.css', array( 'coppeincubadora-style' ), '2013-12-13' );
+    wp_enqueue_style( 'coppeincubadora-mCustomScrollbar', get_template_directory_uri() . '/css/jquery.mCustomScrollbar.css', array( 'coppeincubadora-style' ), '2013-12-13' );
+    wp_enqueue_style( 'coppeincubadora-jcarousel', get_template_directory_uri() . '/css/jcarousel.css', array( 'coppeincubadora-style' ), '2013-12-13' );
 	wp_enqueue_style( 'coppeincubadora-main', get_template_directory_uri() . '/css/main.css', array( 'coppeincubadora-style' ), '2013-07-18' );
+
+    if(is_page_template('template-equipe.php')){
+        wp_enqueue_script('coppeincubadora-equipe', get_template_directory_uri() . '/js/equipe.js', array(), '2013-12-13');
+        wp_enqueue_style( 'coppeincubadora-equipe', get_template_directory_uri() . '/css/equipe.css', array( 'coppeincubadora-style' ), '2013-12-13' );
+    }
+    wp_enqueue_script('coppeincubadora-main', get_template_directory_uri() . '/js/main.js', array(), '2014-01-01');
 //	wp_enqueue_style( 'coppeincubadora-ie', get_template_directory_uri() . '/css/ie.css', array( 'coppeincubadora-style' ), '2013-07-18' );
 //	wp_style_add_data( 'coppeincubadora-ie', 'conditional', 'lt IE 9' );
 }
@@ -503,3 +516,20 @@ function coppeincubadora_customize_preview_js() {
 	wp_enqueue_script( 'coppeincubadora-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'coppeincubadora_customize_preview_js' );
+
+function getYoutubeIdFromUrl($url) {
+    $parts = parse_url($url);
+    if(isset($parts['query'])){
+        parse_str($parts['query'], $qs);
+        if(isset($qs['v'])){
+            return $qs['v'];
+        }else if($qs['vi']){
+            return $qs['vi'];
+        }
+    }
+    if(isset($parts['path'])){
+        $path = explode('/', trim($parts['path'], '/'));
+        return $path[count($path)-1];
+    }
+    return false;
+}

@@ -49,6 +49,47 @@ h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+.gallery dl{
+    float: left;
+    padding: 0 19px;
+}
+
+
+.flit{
+    background: url("../images/seta_flit.png") no-repeat scroll right -3px rgba(0, 0, 0, 0);
+}
+
+h1.flit{
+    background: url("../images/seta_flit.png") no-repeat scroll right 9px rgba(0, 0, 0, 0);
+}
+
+h2.flit{
+    background: url("../images/seta_flit.png") no-repeat scroll right 5px rgba(0, 0, 0, 0);
+}
+
+h1.flit.active, h2.flit.active{
+    background-position: right -53px;
+}
+
+.page-template-template-parceiro-php .content-area h2, .page-template-template-projeto-php .content-area h2 {
+    cursor: pointer;
+}
+
+
+a.more-link {
+    /*background: url("../images/seta_flit.png") no-repeat scroll right -3px rgba(0, 0, 0, 0);*/
+    color: #C4151C;
+    display: block;
+    font-family: Proxima-Regular;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 15px 0;
+    padding-right: 26px;
+    text-align: right;
+    outline: none;
+}
+
 #header .header-top{
     background: url("../images/header-top.jpg") repeat-x scroll 0 0 transparent;
 }
@@ -237,6 +278,41 @@ h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+#content .depoimento-block{
+    border-bottom: 1px solid #B9B9B9;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+}
+
+#content .depoimento-block p{
+    line-height: 25px;
+}
+
+#content .depoimento-block .depoente{
+    color: #c4151c;
+}
+
+#content .canal-acordion h2{
+    border-bottom: 1px solid #BBBBBB;
+}
+
+#content .canal-acordion .pos-info{
+    margin-bottom: 25px;
+}
+
+#content .canal-acordion .video-content{
+    border-bottom: 1px dashed #BBBBBB;
+    margin-bottom: 25px;
+}
+
+#content .video-block{
+    margin-top: 20px;
+}
+
+#content .data-post{
+    color: #C4151C;
+}
+
 #sidebar h2:first-child{
     margin-top: 0;
 }
@@ -274,12 +350,12 @@ h2, h3, h4, h5, h6 {
     color: #c4151c;
 }
 
-#sidebar ul{
+#sidebar ul, .content-area ul{
     margin-left: 0px;
     list-style: none;
 }
 
-#sidebar ul li{
+#sidebar ul li, .content-area ul li{
     background: url("../images/bullet.png") no-repeat scroll 0 3px transparent;
     margin-left: 0;
     padding-left: 19px;
@@ -287,6 +363,12 @@ h2, h3, h4, h5, h6 {
 }
 
 #sidebar ul li:first-child{
+    margin-top: 0;
+}
+
+.content-area ul.social_background li, .content-area .gform_body ul li    {
+    background: none;
+    padding-left: 0;
     margin-top: 0;
 }
 
@@ -425,4 +507,68 @@ ul.nav-menu li:hover > ul,
 
 .menu-toggle {
     display: none;
+}
+
+
+/* Images */
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.alignleft {
+    margin: 5px 20px 5px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 10px 5px 0;
+}
+
+img.alignright {
+    margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+    margin: 5px auto;
+}
+
+img.alignnone {
+    margin: 5px 0;
+}
+
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+    color: #220e10;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+img.wp-smiley,
+.rsswidget img {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.wp-caption.alignleft + ul,
+.wp-caption.alignleft + ol  {
+    list-style-position: inside;
 }
