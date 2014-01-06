@@ -296,11 +296,11 @@ a.more-link {
     border-bottom: 1px solid #BBBBBB;
 }
 
-#content .canal-acordion .pos-info{
+#content .canal-acordion .pos-info, #content .pos-info{
     margin-bottom: 25px;
 }
 
-#content .canal-acordion .video-content{
+#content .canal-acordion .video-content, #content .biblioteca-acordion .biblioteca-content{
     border-bottom: 1px dashed #BBBBBB;
     margin-bottom: 25px;
 }
@@ -311,6 +311,28 @@ a.more-link {
 
 #content .data-post{
     color: #C4151C;
+}
+
+#content .biblioteca-acordion h2.title{
+    color: #C4151C;
+}
+
+#content .biblioteca-img{
+    padding-top: 18px;
+}
+
+#content .biblioteca-acordion .link-externo, #content .biblioteca-acordion .link-externo a{
+    color: #C4151C;
+}
+
+#content .biblioteca-acordion h2 span.tipo_artigo{
+    background-color: #AAAAAA;
+    color: #EEEEEE;
+    float: right;
+    font-size: 12px;
+    line-height: normal;
+    margin-top: 6px;
+    padding: 6px 5px 3px;
 }
 
 #sidebar h2:first-child{
