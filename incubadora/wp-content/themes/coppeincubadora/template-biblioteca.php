@@ -82,7 +82,7 @@ get_header();
                                 <?php $terms = array_pop($terms) ?>
                                 <div class="row biblioteca-content">
                                     <div class="span2 text-center biblioteca-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/docfile.jpg"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/docfile.png"/>
                                     </div>
                                     <div class="span10">
                                         <h2 class="title"><?php the_title() ?><span class="tipo_artigo"><?php print $terms->name; ?></span></h2>
