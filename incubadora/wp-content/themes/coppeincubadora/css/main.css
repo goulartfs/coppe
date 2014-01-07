@@ -537,6 +537,13 @@ ul.nav-menu li:hover > ul,
     display: none;
 }
 
+#menu-item-37 > ul.sub-menu > li{
+    width: 324px;
+}
+
+#menu-item-37 > ul.sub-menu > li > a{
+    width: 280px;
+}
 
 /* Images */
 .alignleft {
