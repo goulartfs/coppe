@@ -328,6 +328,8 @@ a.more-link.active, .flit.active{
 
 .vaga-item{
     margin-bottom: 25px;
+    border-bottom: 3px solid #BBBBBB;
+    padding-bottom: 25px;
 }
 
 .vaga-content h2{

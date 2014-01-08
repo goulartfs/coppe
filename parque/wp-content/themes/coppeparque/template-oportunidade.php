@@ -100,8 +100,8 @@ get_header();
                                         <?php endif; ?>
                                     </div>
                                     <div class="span10">
-                                        <?php if(get_the_title()): ?>
-                                            <h2><?php the_title() ?></h2>
+                                        <?php if (get_the_title()): ?>
+                                            <h2 class="flit"><?php the_title() ?></h2>
                                         <?php endif; ?>
 
                                         <div class="vaga-block">
@@ -109,12 +109,12 @@ get_header();
 
                                             <div class="vaga-content">
                                                 <?php print $vaga['content'] ?>
+                                                <div class="text-right">
+                                                    <a href="?page_id=382&er=<?php print urlencode(get_the_title()) ?>&o=<?php print urlencode($vaga['title']) ?>&e=<?php print urlencode(get_field('email')) ?>">
+                                                        <button class="btn btn-info">Cadastre-se</button>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="text-right">
-                                            <a href="?page_id=382&er=<?php print urlencode(get_the_title()) ?>&o=<?php print urlencode($vaga['title']) ?>&e=<?php print urlencode(get_field('email')) ?>">
-                                                <button class="btn btn-info">Cadastre-se</button>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -133,6 +133,15 @@ get_header();
             </div>
         </div>
     </div>
-
+    <script>
+        jQuery(function () {
+            jQuery('.vaga-content').not(':first').hide();
+            jQuery('.vaga-item h2:first').addClass('active');
+            jQuery('.vaga-item h2').click(function () {
+                jQuery(this).next('.vaga-block').find('.vaga-content').slideToggle();
+                jQuery(this).toggleClass('active');
+            }).css('cursor', 'pointer');
+        })
+    </script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
