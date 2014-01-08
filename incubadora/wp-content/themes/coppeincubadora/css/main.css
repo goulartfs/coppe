@@ -86,7 +86,7 @@ a.more-link {
     font-size: 16px;
     line-height: 27px;
     margin: 15px 0;
-    padding-right: 26px;
+    /*padding-right: 26px;*/
     text-align: right;
     outline: none;
 }
