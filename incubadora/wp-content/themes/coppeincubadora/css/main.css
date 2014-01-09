@@ -511,6 +511,7 @@ ul.nav-menu ul a,
     width: 200px;
     text-transform: none;
     font-family: Arial;
+    font-size: 12px;
     border-left: 4px solid transparent;
 }
 
