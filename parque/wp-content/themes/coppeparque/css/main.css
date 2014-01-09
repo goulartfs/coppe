@@ -326,7 +326,7 @@ a.more-link.active, .flit.active{
     width: 540px;
 }
 
-.vaga-item .span3 img.thumbnail{
+.vaga-item .span3 a.thumbnail > img{
     width: 148px;
     max-width: 148px;
     max-height: 103px;
