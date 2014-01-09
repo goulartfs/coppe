@@ -83,12 +83,23 @@ get_header();
                                 <?php
                                 $vaga['title'] = get_the_title();
                                 $vaga['content'] = get_the_content();
+
+                                /*
+                                *  Show selected image cropped to a specific size
+                                *  Return value = ID ( allows us to get more data about the image )
+                                *  This example uses the WP function: wp_get_attachment_image - http://codex.wordpress.org/Function_Reference/wp_get_attachment_image
+                                */
+
+//                                $attachment_id = get_field('field_name');
+//                                $size = "full"; // (thumbnail, medium, large, full or custom size)
+//                                wp_get_attachment_image( $img['id'], $size );
                                 ?>
                                 <?php $post = get_field('empresa_residente'); ?>
                                 <?php setup_postdata($post); ?>
                                 <?php $img = get_field('logomarca'); ?>
+                                <?php //print wp_get_attachment_image( $img['id'], 'full' ); ?>
                                 <div class="row">
-                                    <div class="span2">
+                                    <div class="span3">
                                         <?php if ($img): ?>
                                             <a href="<?php the_field('link'); ?>" target="_blank">
                                                 <img class="thumbnail"
@@ -99,7 +110,7 @@ get_header();
                                             <img class="thumbnail" src="http://placehold.it/110x110&text=blank"/>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="span10">
+                                    <div class="span9">
                                         <?php if (get_the_title()): ?>
                                             <h2 class="flit"><?php the_title() ?></h2>
                                         <?php endif; ?>

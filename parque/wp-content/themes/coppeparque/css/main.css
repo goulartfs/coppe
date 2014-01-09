@@ -322,6 +322,22 @@ a.more-link.active, .flit.active{
     width: 600px;
 }
 
+.oportunidade-block .span9{
+    width: 540px;
+}
+
+.vaga-item .span3 img.thumbnail{
+    width: 148px;
+    max-width: 148px;
+    max-height: 103px;
+}
+
+.vaga-item .span3 a{
+    display: table-cell;
+    height: 103px;
+    vertical-align: middle;
+}
+
 .oportunidade-block{
     margin-top: 25px;
 }
@@ -472,7 +488,7 @@ div.nav-menu > ul {
 }
 
 .nav-menu > li a {
-    padding: 12px 20px 7px;
+    padding: 7px 20px 7px;
 }
 
 .nav-menu > li > a {
@@ -511,7 +527,7 @@ ul.nav-menu ul a,
     margin: 0;
     width: 200px;
     text-transform: none;
-    font-family: Proxima-Regular;
+    font-family: Arial;
     border-left: 4px solid transparent;
 }
 
