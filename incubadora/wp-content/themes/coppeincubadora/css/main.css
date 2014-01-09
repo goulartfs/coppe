@@ -471,7 +471,7 @@ div.nav-menu > ul {
 }
 
 .nav-menu > li a {
-    padding: 12px 20px 7px;
+    padding: 7px 20px 7px;
 }
 
 .nav-menu > li > a {
@@ -510,7 +510,7 @@ ul.nav-menu ul a,
     margin: 0;
     width: 200px;
     text-transform: none;
-    font-family: Proxima-Regular;
+    font-family: Arial;
     border-left: 4px solid transparent;
 }
 
