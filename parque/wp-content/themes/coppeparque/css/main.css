@@ -333,6 +333,7 @@ a.more-link.active, .flit.active{
 }
 
 .vaga-item .span3 a{
+    background-color: #FFFFFF;
     display: table-cell;
     height: 103px;
     vertical-align: middle;
@@ -529,6 +530,7 @@ ul.nav-menu ul a,
     text-transform: none;
     font-family: Arial;
     border-left: 4px solid transparent;
+    font-size: 12px;
 }
 
 ul.nav-menu ul a:hover,

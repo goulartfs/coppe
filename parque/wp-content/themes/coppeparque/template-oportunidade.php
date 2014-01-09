@@ -101,8 +101,8 @@ get_header();
                                 <div class="row">
                                     <div class="span3">
                                         <?php if ($img): ?>
-                                            <a href="<?php the_field('link'); ?>" target="_blank">
-                                                <img class="thumbnail"
+                                            <a class="thumbnail" href="<?php the_field('link'); ?>" target="_blank">
+                                                <img
                                                      src="<?php print $img['url'] ?>"
                                                      alt="<?php the_title(); ?>"/>
                                             </a>
