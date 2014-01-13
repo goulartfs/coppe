@@ -83,8 +83,7 @@ get_header();
     </div>
     <script>
         jQuery(function () {
-            jQuery('.equipe-block').not(':first').hide();
-            jQuery('.content-area h2.flit:first').addClass('active');
+            jQuery('.equipe-block').hide();
             jQuery('.content-area h2.flit').click(function () {
                 jQuery(this).nextUntil('h2.flit').slideToggle();
                 jQuery(this).toggleClass('active');
