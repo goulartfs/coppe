@@ -321,7 +321,7 @@ a.more-link.active, .flit.active{
 #content .gform_wrapper select{
     font-size: 13px;
     height: auto;
-    padding: 9px;
+    padding: 9px 9px 6px 9px;
 }
 
 #content .gform_wrapper select option{
