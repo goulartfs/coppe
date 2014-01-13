@@ -77,6 +77,7 @@ Project demo: http://shindiristudio.com/usquare/
 //						this_backup.$trigger_text.animate({'top': 0}, 'slow');
 					}
 		            this.$item.addClass('usquare_block_selected');
+                    this.$item.find('#usquare-more-link').hide();
 					var height_backup=this.$info.css('height');
 					this.$info.css('height', 0);
 					this.$info.show();
@@ -100,7 +101,8 @@ Project demo: http://shindiristudio.com/usquare/
 					var this_backup=this;
 		            this.$info.hide();
 					var trigger_text_position_top = this_backup.$item.height() - this_backup.$trigger_text.height();
-					this_backup.$item.removeClass('usquare_block_selected');							
+					this_backup.$item.removeClass('usquare_block_selected');
+                    this.$item.find('#usquare-more-link').show();
 					if (this.$item.data('moved'))
 					{
 						var top_backup=this.$item.data('moved');

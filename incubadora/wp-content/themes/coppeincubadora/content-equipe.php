@@ -1,6 +1,11 @@
 <div class="usquare_block">
-    <img src="<?php echo $upload_dir['baseurl'] . $user->profileimage; ?>"
-         class="usquare_square" alt="" width="140" height="140"/>
+    <?php if($user->profileimage){ ?>
+        <img src="<?php echo $upload_dir['baseurl'] . $user->profileimage; ?>"
+             class="usquare_square" alt="" width="140" height="140"/>
+    <?php } else{ ?>
+        <img src="http://placehold.it/140x140&text=Foto"
+             class="usquare_square" alt="" width="140" height="140"/>
+    <?php } ?>
 
     <div class="usquare_square usquare_square_bg1">
         <div class="usquare_square_text_wrapper">
@@ -13,6 +18,9 @@
                 <p>
                     <?php print $user->description ?>
                 </p>
+            </div>
+            <div id="usquare-more-link" class="text-right">
+                <span>[+] Mais</span>
             </div>
             <ul class="social_background inline">
                 <?php if ($user->user_email): ?>

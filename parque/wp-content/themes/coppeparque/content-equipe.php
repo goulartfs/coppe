@@ -19,6 +19,9 @@
                     <?php print $user->description ?>
                 </p>
             </div>
+            <div id="usquare-more-link" class="text-right">
+                <span>[+] Mais</span>
+            </div>
             <ul class="social_background inline">
                 <?php if ($user->user_email): ?>
                     <li><a href="mailto:<?php print $user->user_email ?>" target="_blank"><img
