@@ -87,7 +87,7 @@ get_header();
             jQuery('.content-area h2.flit').click(function () {
                 jQuery(this).nextUntil('h2.flit').slideToggle();
                 jQuery(this).toggleClass('active');
-            }).css('cursor', 'pointer').css('margin-bottom', '0');
+            }).css('cursor', 'pointer');
         })
     </script>
 

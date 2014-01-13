@@ -44,6 +44,10 @@ h6{
     font-size: 13px;
 }
 
+.content h2:first-child {
+    margin-top: 0;
+}
+
 h2, h3, h4, h5, h6 {
     color: #747474;
     font-family: Proxima-Regular;
