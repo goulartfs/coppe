@@ -318,6 +318,15 @@ a.more-link.active, .flit.active{
     padding-right: 25px;
 }
 
+#content .gform_wrapper select{
+    font-size: 13px;
+    height: auto;
+    padding: 9px;
+}
+
+#content .gform_wrapper select option{
+}
+
 .projeto-content .span10, .oportunidade-block .span10{
     width: 600px;
 }
