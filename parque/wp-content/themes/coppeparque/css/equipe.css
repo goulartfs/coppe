@@ -135,5 +135,5 @@ div.usquare_square{
 }
 
 .page-template-template-equipe-php h2.flit{
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
