@@ -146,8 +146,7 @@ get_header();
     </div>
     <script>
         jQuery(function () {
-            jQuery('.vaga-content').not(':first').hide();
-            jQuery('.vaga-item h2:first').addClass('active');
+            jQuery('.vaga-content').hide();
             jQuery('.vaga-item h2').click(function () {
                 jQuery(this).next('.vaga-block').find('.vaga-content').slideToggle();
                 jQuery(this).toggleClass('active');
