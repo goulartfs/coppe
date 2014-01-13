@@ -128,3 +128,8 @@ div.usquare_square{
     text-transform: uppercase;
     font-size: 13px;
 }
+
+.page-template-template-equipe-php #content {
+    background: url("../images/content-bg.jpg") repeat-x scroll center -453px #FFFFFF;
+    padding: 10px 0;
+}
