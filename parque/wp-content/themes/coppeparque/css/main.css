@@ -324,6 +324,10 @@ a.more-link.active, .flit.active{
     padding: 9px;
 }
 
+#content .gform_wrapper select.medium{
+    width: 337px;
+}
+
 #content .gform_wrapper select option{
     padding: 0;
 }
