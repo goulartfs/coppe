@@ -3,7 +3,7 @@
         <img src="<?php echo $upload_dir['baseurl'] . $user->profileimage; ?>"
              class="usquare_square" alt="" width="140" height="140"/>
     <?php } else{ ?>
-        <img src="http://placehold.it/140x140&text=Foto"
+        <img src="<?php echo get_template_directory_uri(); ?>/images/perfil.png"
              class="usquare_square" alt="" width="140" height="140"/>
     <?php } ?>
 
