@@ -511,8 +511,9 @@ ul.nav-menu ul a,
     width: 200px;
     text-transform: none;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 13px;
     border-left: 4px solid transparent;
+    letter-spacing: normal;
 }
 
 ul.nav-menu ul a:hover,
