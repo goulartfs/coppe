@@ -549,7 +549,8 @@ ul.nav-menu ul a,
     text-transform: none;
     font-family: Arial;
     border-left: 4px solid transparent;
-    font-size: 12px;
+    font-size: 13px;
+    letter-spacing: normal;
 }
 
 ul.nav-menu ul a:hover,
