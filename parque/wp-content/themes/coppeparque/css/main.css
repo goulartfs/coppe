@@ -332,6 +332,11 @@ a.more-link.active, .flit.active{
     padding: 0;
 }
 
+#content .gform_wrapper .email-destino-empresa input, #content .gform_wrapper .email-destino-empresa label,
+#content .gform_wrapper .email-destino-empresa .ginput_container, #content .gform_wrapper .nome-empresa{
+    display: none;
+}
+
 .projeto-content .span10, .oportunidade-block .span10{
     width: 600px;
 }

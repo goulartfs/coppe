@@ -538,10 +538,10 @@ function populate_empresas($form){
             continue;
 
         $posts = get_posts('post_type=empresa');
-        $choices = array(array('text' => 'Selecione uma empresa', 'value' => ''));
+       $choices = array(array('text' => 'Selecione uma empresa', 'value' => 'null'));
         foreach($posts as $post){
-            setup_postdata($post);
-            $choices[] = array('text' => $post->post_title, 'value' => get_field('email'));
+            $acf = get_field_object('email', $post->ID);
+            $choices[] = array('text' => $post->post_title, 'value' => $acf['value']);
         }
         $field['choices'] = $choices;
     }
