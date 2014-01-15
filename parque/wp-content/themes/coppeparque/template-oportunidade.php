@@ -107,7 +107,9 @@ get_header();
                                                      alt="<?php the_title(); ?>"/>
                                             </a>
                                         <?php else: ?>
-                                            <img class="thumbnail" src="http://placehold.it/110x110&text=blank"/>
+                                            <a class="thumbnail">
+                                                <img src="http://placehold.it/148x103&text=blank"/>
+                                            </a>
                                         <?php endif; ?>
                                     </div>
                                     <div class="span9">
@@ -146,13 +148,12 @@ get_header();
     </div>
     <script>
         jQuery(function () {
-            jQuery('.vaga-content').not(':first').hide();
-            jQuery('.vaga-item h2:first').addClass('active');
+            jQuery('.vaga-content').hide();
             jQuery('.vaga-item h2').click(function () {
                 jQuery(this).next('.vaga-block').find('.vaga-content').slideToggle();
                 jQuery(this).toggleClass('active');
             }).css('cursor', 'pointer');
         })
     </script>
-<?php get_sidebar(); ?>
+<?php get_sidebar('oportunidade'); ?>
 <?php get_footer(); ?>
