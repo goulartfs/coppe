@@ -2,7 +2,7 @@
     border-bottom: medium none;
     color: #c4151c;
     font-family: Proxima-Regular;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 17px;
     margin: 20px 0 0;
     text-transform: none;
@@ -24,7 +24,7 @@
 .usquare_module_wrapper {
     position: relative;
     width: 760px;
-    height: 520px;
+    min-height: 200px;
 }
 
 .usquare_block {
@@ -123,14 +123,13 @@ div.usquare_square{
 
 #usquare-more-link span{
     border: none;
-    color: #C4151C;
+    color: #747474;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 13px;
 }
 
 .page-template-template-equipe-php #content {
-    background: url("../images/content-bg.jpg") repeat-x scroll center -440px #FFFFFF;
     padding: 10px 0;
 }
 

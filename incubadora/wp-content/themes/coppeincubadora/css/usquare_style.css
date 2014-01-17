@@ -80,8 +80,7 @@ img.usquare_square {
 	text-align:right;
 }
 .usquare_square_text_wrapper {
-	position:absolute; 
-	bottom:0; 
+	bottom:0;
 	text-align:left; 
 	padding:0 5px;
 }

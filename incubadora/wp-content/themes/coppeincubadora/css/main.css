@@ -133,16 +133,27 @@ a.more-link {
     margin-left: 0;
 }
 
-#header .header-middle .top-links .incubadora{
-    background: url("../images/logo-incubadora.png") no-repeat scroll 0 2px transparent;
+#header .header-middle .top-links .parque{
+    background: url("../images/logo-parque.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links .parque:hover{
+    background: url("../images/logo-parque.png") no-repeat scroll 0 -24px transparent;
 }
 
 #header .header-middle .top-links .ufrj{
     background: url("../images/logo-ufrj.png") no-repeat scroll 0 2px transparent;
 }
+#header .header-middle .top-links .ufrj:hover{
+    background: url("../images/logo-ufrj.png") no-repeat scroll 0 -18px transparent;
+}
 
 #header .header-middle .top-links .english{
     background: url("../images/english-version.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links .english:hover{
+    background: url("../images/english-version.png") no-repeat scroll 0 -20px transparent;
 }
 
 #header .header-middle .top-links a{
@@ -156,11 +167,12 @@ a.more-link {
 }
 
 #header .header-middle .search-bar label{
-    background: url("../images/lupa.png") no-repeat scroll 5px 4px transparent;
+    background: url("../images/lupa.png") no-repeat scroll 5px 4px #FFFFFF;
+    border-radius: 0;
+    border-right: 0 none;
+    color: #919191;
     line-height: 24px;
     padding-left: 30px;
-    border-right: 0;
-    color: #919191;
 }
 
 #header .header-middle .search-bar input{
@@ -205,11 +217,11 @@ a.more-link {
 }
 
 #header .header-navbar{
-    background: #a20e14;
     height: 39px;
     color: #FFF;
     font-family: Proxima-Bold;
     font-size: 16px;
+    background: url("../images/bg_menu_efeito.png") repeat-x scroll center top #a20e14;
 }
 
 #content{
@@ -223,7 +235,7 @@ a.more-link {
     color: #c4151c;
     font-family: Proxima-Bold;
     font-size: 30px;
-    padding-bottom: 10cpx;
+    padding-bottom: 10px;
     padding-left: 32px;
     text-transform: uppercase;
 }
@@ -252,6 +264,7 @@ a.more-link {
     color: #555555;
     line-height: 20px;
     margin-top: 25px;
+    min-height: 300px;
 }
 
 #content .content-pos{
@@ -380,7 +393,7 @@ a.more-link {
 
 #sidebar .sidebar > .more a{
     text-transform: uppercase;
-    color: #c4151c;
+    color: #747474;
 }
 
 #sidebar ul, .content-area ul{
@@ -480,6 +493,7 @@ div.nav-menu > ul {
 
 .nav-menu > li > a {
     padding: 12px 40px 7px;
+    letter-spacing: -0.1px;
 }
 
 .nav-menu li:hover > a,
@@ -544,12 +558,11 @@ ul.nav-menu li:hover > ul,
     display: none;
 }
 
-#menu-item-37 > ul.sub-menu > li{
-    width: 324px;
-}
-
 #menu-item-37 > ul.sub-menu > li > a{
-    width: 280px;
+    width: 252px;
+}
+#menu-item-38 > ul.sub-menu > li > a{
+    width: 148px;
 }
 
 /* Images */
