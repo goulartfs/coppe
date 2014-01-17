@@ -492,7 +492,7 @@ div.nav-menu > ul {
 }
 
 .nav-menu > li > a {
-    padding: 12px 40px 7px;
+    padding: 12px 20px 7px;
     letter-spacing: -0.1px;
 }
 
@@ -559,10 +559,18 @@ ul.nav-menu li:hover > ul,
 }
 
 #menu-item-37 > ul.sub-menu > li > a{
-    width: 252px;
+    width: 212px;
 }
 #menu-item-38 > ul.sub-menu > li > a{
-    width: 148px;
+    width: 108px;
+}
+
+ul.sub-menu > li{
+    border-top: 1px solid #e8e8e8;
+}
+
+ul.sub-menu > li:first-child{
+    border-top: none;
 }
 
 /* Images */
