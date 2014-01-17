@@ -487,6 +487,14 @@ div.nav-menu > ul {
     text-decoration: none;
 }
 
+.nav-menu > li{
+    margin-left: 50px;
+}
+
+.nav-menu > li:first-child{
+    margin-left: 0;
+}
+
 .nav-menu > li a {
     padding: 5px 20px;
 }
