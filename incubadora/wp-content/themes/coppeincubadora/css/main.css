@@ -502,6 +502,7 @@ div.nav-menu > ul {
 .nav-menu > li > a {
     padding: 12px 20px 7px;
     letter-spacing: -0.1px;
+    white-space: nowrap;
 }
 
 .nav-menu li:hover > a,
