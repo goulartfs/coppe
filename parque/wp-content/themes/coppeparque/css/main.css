@@ -153,12 +153,24 @@ a.more-link.active, .flit.active{
     background: url("../images/logo-incubadora.png") no-repeat scroll 0 2px transparent;
 }
 
+#header .header-middle .top-links .incubadora:hover{
+    background: url("../images/logo-incubadora.png") no-repeat scroll 0 -22px transparent;
+}
+
 #header .header-middle .top-links .ufrj{
     background: url("../images/logo-ufrj.png") no-repeat scroll 0 2px transparent;
 }
 
+#header .header-middle .top-links .ufrj:hover{
+    background: url("../images/logo-ufrj.png") no-repeat scroll 0 -18px transparent;
+}
+
 #header .header-middle .top-links .english{
     background: url("../images/english-version.png") no-repeat scroll 0 2px transparent;
+}
+
+#header .header-middle .top-links .english:hover{
+    background: url("../images/english-version.png") no-repeat scroll 0 -20px transparent;
 }
 
 #header .header-middle .top-links a{
@@ -172,11 +184,12 @@ a.more-link.active, .flit.active{
 }
 
 #header .header-middle .search-bar label{
-    background: url("../images/lupa.png") no-repeat scroll 5px 4px transparent;
+    background: url("../images/lupa.png") no-repeat scroll 5px 4px #FFFFFF;
+    border-radius: 0;
+    border-right: 0 none;
+    color: #919191;
     line-height: 24px;
     padding-left: 30px;
-    border-right: 0;
-    color: #919191;
 }
 
 #header .header-middle .search-bar input{
@@ -221,11 +234,11 @@ a.more-link.active, .flit.active{
 }
 
 #header .header-navbar{
-    background: #005141;
     height: 39px;
     color: #FFF;
     font-family: Proxima-Bold;
     font-size: 16px;
+    background: url("../images/bg_menu_efeito.png") repeat-x scroll center top #005141;
 }
 
 #content{
@@ -268,6 +281,7 @@ a.more-link.active, .flit.active{
     color: #555555;
     line-height: 20px;
     margin-top: 10px;
+    min-height: 300px;
 }
 
 #content .content .pre-content{
@@ -499,6 +513,14 @@ div.nav-menu > ul {
     position: relative;
 }
 
+.nav-menu > li:first-child {
+    margin-left: 0;
+}
+
+.nav-menu > li {
+    margin-left: 40px;
+}
+
 .nav-menu li a {
     color: #FFFFFF;
     display: block;
@@ -513,6 +535,7 @@ div.nav-menu > ul {
 
 .nav-menu > li > a {
     padding: 12px 40px 7px;
+    letter-spacing: -0.1px;
 }
 
 .nav-menu li:hover > a,
