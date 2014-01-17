@@ -510,7 +510,6 @@ div.nav-menu > ul {
     display: none;
     padding: 0;
     position: absolute;
-    left: -2px;
     z-index: 99999;
     margin-left: 0;
 }
@@ -544,6 +543,7 @@ ul.nav-menu ul a:hover,
 ul.nav-menu li:hover > ul,
 .nav-menu ul li:hover > ul {
     display: block;
+    border: none;
 }
 
 .nav-menu .current_page_item > a,
