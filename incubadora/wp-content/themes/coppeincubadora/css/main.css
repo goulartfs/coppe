@@ -513,7 +513,6 @@ div.nav-menu > ul {
 .nav-menu .sub-menu,
 .nav-menu .children {
     background-color: #FFF;
-    border: 2px solid #f7f5e7;
     border-top: 0;
     display: none;
     padding: 0;
