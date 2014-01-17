@@ -530,7 +530,7 @@ div.nav-menu > ul {
 }
 
 .nav-menu > li a {
-    padding: 7px 20px 7px;
+    padding: 5px 20px;
 }
 
 .nav-menu > li > a {
@@ -594,6 +594,15 @@ ul.nav-menu li:hover > ul,
 .nav-menu .current-menu-ancestor > a {
 /*    color: #bc360a;
     font-style: italic;*/
+}
+
+
+ul.sub-menu > li{
+    border-top: 1px solid #e8e8e8;
+}
+
+ul.sub-menu > li:first-child{
+    border-top: none;
 }
 
 .menu-toggle {
