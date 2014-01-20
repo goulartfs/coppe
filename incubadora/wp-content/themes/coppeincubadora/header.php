@@ -65,7 +65,7 @@
                             <div class="row">
                                 <div class="span10">
                                     <ul class="top-links inline">
-                                        <li class="incubadora"><a href='#' title="Incubadora de Empresas">Incubadora de Empresas</a></li>
+                                        <li class="parque"><a href='#' title="Parque Tecnológico">Parque Tecnológico</a></li>
                                         <li class="ufrj"><a href='#' title="UFRJ">UFRJ</a></li>
                                         <li class="english"><a href='#' title="English Version">English Version</a></li>
                                     </ul>

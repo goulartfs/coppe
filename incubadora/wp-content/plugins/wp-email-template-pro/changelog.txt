@@ -1,0 +1,82 @@
+*** WP Email Template Changelog ***
+
+= 1.1.1 -2013/12/21 =
+* Feature - a3rev Plugin Framework admin interface upgraded to 100% Compatibility with WordPress v3.8.0 with backward compatibility.
+* Feature - a3rev framework 100% mobile and tablet responsive, portrait and landscape viewing.
+* Feature - Button style - Rounded - Can now set a rounded value for each corner of the button to create many different button styles.
+* Tweak - Upgraded dashboard switches and sliders to Vector based display that shows when WordPress version 3.8.0 is activated.
+* Tweak - Upgraded all plugin .jpg icons and images to Vector based display for full compatibility with new WordPress version.
+* Tweak - Tested 100% compatible with WP 3.8.0
+* Fix - Update make_compatibility function with  isset( $args->slug ) and isset( $args['body']['request'] ) so that our plugin can work together with other developers plugin (eg Backupbuddy) that adds filter on the WordPress plugins_api (bad thing to do)
+* Fix - Upgraded array_textareas type for Padding, Margin settings on the a3rev plugin framework
+* Fix - $args->slug depreciated in WordPress 3.7, replace with $request = unserialize( $args['body']['request'] ); $request->slug
+* Fix - Google fonts preview changes conflict.
+
+= 1.1.0 - 2013/10/10 =
+* Feature - Admin panel intuitive app interface feature. Show slider to set corner radius when select Round, hide when select Square on Border Corner Style Switch.
+* Fix - Intuitive Radio Switch settings not saving. Input with disabled attribute could not parse when form is submitted, replace disabled with custom attribute: checkbox-disabled
+* Fix - App interface Radio switches not working properly on Android platform, replace removeProp() with removeAttr() function script
+
+= 1.0.9 - 2013/10/04 =
+* Feature - Upgraded the plugin to the newly developed a3rev admin panel app interface.
+* Feature - New admin UI features check boxes replaced by switches, some dropdowns replaced by sliders.
+* Feature - Replaced colour picker with new WordPress 3.6.0 colour picker.
+* Feature - Added choice of 350 Google fonts to the existing 17 websafe fonts in all new single row font editor.
+* Feature - New Font Editor has instant preview feature.
+* Feature - Upload Custom Social Media icons feature added.
+* Feature: Added House keeping function. On deletion set if you want the plugin to 'Clean Up After Itself' leaving not trace it was ever installed.
+* Tweak - Admin Panel now has 3 tabs with setting broken up into - General, Style and Social Media.
+* Tweak - Compatibility with WordPress 3.6.0 done when released. Checked again with WP 3.6.1
+* Tweak - Ran full WP_DEBUG All Uncaught exceptions errors and warnings fixed.
+* Fix - Plugins admin script and style not loading in Firefox with SSL on admin. Stripped http// and https// protocols so browser will use the protocol that the page was loaded with.
+
+= 1.0.8 - 2013/06/13 =
+* Tweak - Added PHP Public Static to functions in Class. Done so that Public Static warnings don't show in DE_BUG mode.
+* Tweak - Updated support URL to the plugins a3rev.com support forum.
+
+= 1.0.7 - 2013/04/16 =
+* Feature - Added when install and activate plugin link redirects to License Key validation page instead of the wp-plugins dashboard.
+* Fix - Yahoo Mail does not support p tag - space between paragraphs. Coded in line CSS fix to auto add space between paragraphs for Yahoo Mail.
+* Fix - Yahoo Mail auto removes body tag and hence would not show the background colour. Coded in-line CSS fix to force Yahoo Mail to show background colour.
+* Fix: Updated all JavaScript functions so that the plugin is compatible with jQuery Version1.9 and backwards to version 1.6. WordPress still uses jQuery version 1.8.3. In themes that use Google js Library instead of the WordPress jQuery then there was trouble because Google uses the latest jQuery version 1.9. There are a number of functions in jQuery Version 1.9 that have been depreciated and hence this was causing errors with the jQuery function in the plugin.
+
+= 1.0.6 - 2013/04/01 =
+* Tweak - Upgraded plugins admin to use Chosen script for dropdowns and options.
+* Tweak - Replaced add template header image via URL with image uploader.
+* Tweak - Added option to set Text link colour in email body. Previously this was auto set to be the same as the header background colour - but caused problems with links not visible when header background and email body background both use the same colour.
+* Tweak - Update the plugins wiki docs to show new admin style, image upload feature and colour link text colour options.
+* Fix - Max wide layout issues with template display in iPhone 5.
+* Fix - Bug for users who have https: (SSL) on their sites wp-admin but have http on sites front end. This was causing the email template preview to show a -1 instead of the Template because wp-admin with SSL applied only allows https:, but the url of admin-ajax.php?action=preview_wp_email_template is http: and it is denied hence was returning the ajax -1 error. Fixed by writing a filter to recognize when https is configured on wp-admin and parsing correctly. If you do not have this configuration nothing changes for you, if you do have https on your wp-admin (or install it in the future) and http on the front end then Email Template Preview action now automatically detects that and works as it should.
+
+= 1.0.5 - 2013/03/05 =
+* Feature - Added the ability to deactivate the Email Template background pattern. (much requested feature).
+* Tweak - Updated all plugin code to be 100% compatible with WooCommerce V2.0 and backwards.
+
+= 1.0.4.1 - 2013/02/16 =
+* Tweak - Added a Settings link to the plugins wp-admin plugins dashboard listing and updated the Support URL
+* Fix - Remove define tinymce plugins for the Email footer text editor. This allows the Email footer text editor to use use all current plugins of tinymce in use on the site the plugin is installed on.
+* Localization - German Translation by Marko Geisler added to langauge folder
+
+= 1.0.4 - 2013/01/11 =
+* Fix - Email Template options on admin panel not updating when click save changes. Stopped working in version 1.0.3 - now fixed.
+* Fix - WP Email Template apply to WooCommerce Email template when user had selected do not apply for that option.
+* Credit - Thank you to [Roger Amstell](http://rapsystems.co.uk) for reporting and helping us to locate and fix these bugs.
+
+
+= 1.0.3 - 2013/01/09 =
+* Fix - When user server does not support  file_get_contents function changes made to the template were not applying to the WooCommerce Email template. We had added a get file from get_stylesheet_directory_uri constant as a work around but had missed the () at the end of the function so it wasn't working
+
+= 1.0.2 - 2012/12/31 =
+* Feature - Updated plugin API to allow Pro Version License holders to manage their Licenses from the all new "My Account" dashboard on a3rev. Includes the option to see which domains each plugin is installed and activated on and the ability to deactivate the plugin on any domain from the 'My Account' > Manage Licenses dashboard.
+
+
+= 1.0.1 - 2012/11/29 =
+* Feature - Now supports WPMU - Pro Version Single License now works on any domain or sub domain that the Plugin is installed on with the WPMU environment. Note it only works on 1 per license.
+* Tweak - Change Pro Version plugin API call from cURL to now use WordPress auto update wp_remote_request function. This is to fix Pro License user who do not have cURL activated on their host not being able to install and activate the plugin.
+* Tweak - Built new Amazon EC2 plugin API to increase connection and download speed as well as reliability and uptime - plugin from this version calls to the new API.
+* Fix - Fixed conflict with WordPress Domain Mapping plugin - thanks to Johannes for access to his WPMU install to find and fix this issue.
+* Fix - Change Pro Version plugin API call so that it only calls from the WP-Plugins page and not from every admin page.* Fixed: Changed Pro Version plugin API call so that if it calls once to the API and it does not connect it auto aborts instead of keeping on trying to call.
+
+= 1.0.0 - 2012/09/03 =
+* First Release.
+  

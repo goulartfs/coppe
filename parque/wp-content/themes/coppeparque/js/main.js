@@ -19,4 +19,11 @@ jQuery(function(){
         jQuery('.email-destino-empresa input').attr('value', jQuery(this).val()!='null'?jQuery(this).val():'');
         jQuery('.nome-empresa input').attr('value',jQuery(this).val()!='null'?jQuery(this).find('option:selected').html():'');
     });
+
+    label = jQuery('.form-endereco > div > span:first > label');
+    label.html(label.html() + ' Completo');
+
+    jQuery('.filter-empresa, .filter-categoria').change(function(){
+        jQuery(this).parent().submit();
+    })
 })
