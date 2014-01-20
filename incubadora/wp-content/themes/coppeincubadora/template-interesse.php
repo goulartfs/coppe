@@ -80,15 +80,26 @@ get_header();
                             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                                 <div class="row video-content">
                                     <div class="span5 video-block">
-                                        <div class="video-area">
-                                            <?php if (get_field('embed_code')) { ?>
-                                                <?php the_field('embed_code'); ?>
-                                            <?php } elseif (get_field('video')) { ?>
-                                                <iframe width="295"
-                                                        src="//www.youtube.com/embed/<?php print getYoutubeIdFromUrl(get_field('video')); ?>?rel=0"
-                                                        frameborder="0" allowfullscreen>
-                                                </iframe>
-                                            <?php } ?>
+                                        <div class="">
+                                            <a href="#inline-<?php the_ID() ?>" rel="wp-video-lightbox">
+                                                <?php
+                                                if(has_post_thumbnail(get_the_ID())){
+                                                    the_post_thumbnail(array(290, 190), array('class' => 'thumbnail text-center'));
+                                                } else{
+                                                    print '<img src="http://placehold.it/290x190&text=Imagem de Destaque" />';
+                                                }
+                                                ?>
+                                            </a>
+                                            <div id="inline-<?php the_ID() ?>" class="video-area" style="display:none;">
+                                                <?php if (get_field('embed_code')) { ?>
+                                                    <?php the_field('embed_code'); ?>
+                                                <?php } elseif (get_field('video')) { ?>
+                                                    <iframe width="295"
+                                                            src="//www.youtube.com/embed/<?php print getYoutubeIdFromUrl(get_field('video')); ?>?rel=0"
+                                                            frameborder="0" allowfullscreen>
+                                                    </iframe>
+                                                <?php } ?>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="span7">

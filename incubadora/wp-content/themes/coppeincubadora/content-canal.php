@@ -13,7 +13,7 @@
     <header class="entry-header">
         <?php if (has_post_thumbnail() && !post_password_required()) : ?>
             <div class="entry-thumbnail">
-                <?php the_post_thumbnail(); ?>
+                <?php //the_post_thumbnail(); ?>
             </div>
         <?php endif; ?>
 
@@ -64,6 +64,9 @@
             <br><br>
             <?php the_content(__('Continue reading <span class="meta-nav">&rarr;</span>', 'coppeincubadora')); ?>
             <?php wp_link_pages(array('before' => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'coppeincubadora') . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>')); ?>
+            <div>
+                <?php //print do_shortcode('[social_share/]') ?>
+            </div>
         </div><!-- .entry-content -->
     <?php endif; ?>
 
