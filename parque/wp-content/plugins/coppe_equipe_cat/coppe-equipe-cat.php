@@ -67,6 +67,15 @@ function baw_settings_page()
     ?>
     <div class="wrap">
         <h2>Coppe - Ordernar Categoria de Equipe</h2>
+        <?php
+            if(isset($_REQUEST['settings-updated']) && $_REQUEST['settings-updated']=='true'){
+                ?>
+                <div class="updated fade">
+                    <p>Configurações salvas</p>
+                </div>
+                <?php
+            }
+        ?>
 
         <form method="post" action="options.php">
             <?php settings_fields('baw-settings-group'); ?>
