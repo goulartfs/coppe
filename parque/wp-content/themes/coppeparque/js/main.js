@@ -22,4 +22,8 @@ jQuery(function(){
 
     label = jQuery('.form-endereco > div > span:first > label');
     label.html(label.html() + ' Completo');
+
+    jQuery('.filter-empresa, .filter-categoria').change(function(){
+        jQuery(this).parent().submit();
+    })
 })

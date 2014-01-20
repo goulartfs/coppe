@@ -60,6 +60,11 @@ h2{
     padding-bottom: 2px;
 }
 
+.page-template-template-oportunidade-php .content-area h2:first-child,
+.page-template-template-oportunidade-php .content-area h2.first{
+    margin-top: 0;
+}
+
 h3{
     font-size: 18px;
     border-bottom: 1px dashed #BBBBBB;
@@ -428,6 +433,22 @@ a.more-link.active, .flit.active{
 #sidebar .sidebar > .more a{
     text-transform: uppercase;
     color: #f37423;
+}
+
+#sidebar .sidebar.filter form{
+    margin-bottom: 5px;
+}
+
+#sidebar .sidebar.filter .filter-palavra{
+    width: 190px;
+}
+
+#sidebar .sidebar.filter select{
+    width: 100%;
+}
+
+#sidebar .sidebar.filter select, #sidebar .sidebar.filter input, #sidebar .sidebar.filter button{
+    border-radius: 0;
 }
 
 #sidebar ul, .content-area ul{
