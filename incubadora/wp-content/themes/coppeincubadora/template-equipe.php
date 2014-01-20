@@ -53,10 +53,28 @@ get_header();
                     }
                 }
 
+                $catOrdem = get_option('coppe-cat-order');
+
                 // User Loop
                 ?>
                 <?php
-                foreach ($categorias as $chave => $valor) {
+                if(!empty($catOrdem)){
+                    asort($catOrdem);
+                    foreach($catOrdem as $chave => $ignored){
+                        if(in_array($chave, array_keys($categorias))){
+                            $arrayOrdenado[$chave] = $categorias[$chave];
+                        }
+                    }
+
+                    foreach($categorias as $chave => $ignored){
+                        if(!in_array($chave, array_keys($arrayOrdenado))){
+                            $arrayOrdenado[$chave] = $categorias[$chave];
+                        }
+                    }
+                } else{
+                    $arrayOrdenado = $categorias;
+                }
+                foreach ($arrayOrdenado as $chave => $valor) {
                     ?>
                     <h2 class="flit"><?php print $chave ?></h2>
                     <div class="equipe-block">
