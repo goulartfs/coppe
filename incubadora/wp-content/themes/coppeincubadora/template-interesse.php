@@ -80,12 +80,19 @@ get_header();
                             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                                 <div class="row video-content">
                                     <div class="span5 video-block">
-                                        <iframe width="295"
-                                                src="//www.youtube.com/embed/<?php print getYoutubeIdFromUrl(get_field('video')); ?>?rel=0"
-                                                frameborder="0" allowfullscreen></iframe>
+                                        <div class="video-area">
+                                            <?php if (get_field('embed_code')) { ?>
+                                                <?php the_field('embed_code'); ?>
+                                            <?php } elseif (get_field('video')) { ?>
+                                                <iframe width="295"
+                                                        src="//www.youtube.com/embed/<?php print getYoutubeIdFromUrl(get_field('video')); ?>?rel=0"
+                                                        frameborder="0" allowfullscreen>
+                                                </iframe>
+                                            <?php } ?>
+                                        </div>
                                     </div>
                                     <div class="span7">
-                                        <h2><?php the_title() ?></h2>
+                                        <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
 
                                         <div class="row pos-info">
                                             <div class="span3">

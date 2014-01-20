@@ -5,7 +5,7 @@ get_header();
 <?php if (!is_home() && !is_search()) { ?>
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-            <?php if (is_page() ) : ?>
+            <?php if (is_page() || is_single()) : ?>
                 <div class="content-header">
                     <div class="container">
                         <div class="row">
@@ -20,15 +20,9 @@ get_header();
                 <div class="container">
                     <div class="row">
                         <div class="span16">
-                            <!--                                <ul class="breadcrumb">
-                                                                <li><a href="#">Home</a> <span class="divider">/</span></li>
-                                                                <li><a href="#">Library</a> <span class="divider">/</span></li>
-                                                                <li class="active">Data</li>
-                                                            </ul>-->
                             <div class="breadcrumb">
                                 <?php
-                                if(function_exists('bcn_display'))
-                                {
+                                if (function_exists('bcn_display')) {
                                     bcn_display();
                                 }
                                 ?>
@@ -47,12 +41,19 @@ get_header();
         <div class="row">
             <div class="span12 content-area">
                 <div class="wrapper">
-
+                    <?php $is_video; ?>
                     <?php if (have_posts()) : ?>
 
                         <?php /* The loop */ ?>
                         <?php while (have_posts()) : the_post(); ?>
-                            <?php get_template_part('content', get_post_format()); ?>
+                            <?php
+                            foreach (get_the_category(get_the_ID()) as $categoria) {
+                                if (in_array($categoria->slug, array('interesse', 'canal-da-incubadora'))) {
+                                    $is_video = true;
+                                }
+                            }
+                            ?>
+                            <?php get_template_part('content', $is_video?'canal':get_post_format()); ?>
                         <?php endwhile; ?>
 
                         <?php coppeincubadora_paging_nav(); ?>
