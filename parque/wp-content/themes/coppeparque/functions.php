@@ -148,7 +148,7 @@ function coppeparque_scripts_styles() {
     wp_enqueue_style( 'coppeparque-mCustomScrollbar', get_template_directory_uri() . '/css/jquery.mCustomScrollbar.css', array( 'coppeparque-style' ), '2013-12-13' );
     wp_enqueue_style( 'coppeparque-jcarousel', get_template_directory_uri() . '/css/jcarousel.css', array( 'coppeparque-style' ), '2013-12-13' );
     wp_enqueue_style( 'coppeparque-main', get_template_directory_uri() . '/css/main.css', array( 'coppeparque-style' ), '2013-07-18' );
-    if(is_page_template('template-equipe.php')){
+    if(is_page_template('template-equipe.php') || is_page_template('template-residente.php')){
         wp_enqueue_script('cooppeparque-equipe', get_template_directory_uri() . '/js/equipe.js', array(), '2013-12-13');
         wp_enqueue_style( 'coppeparque-equipe', get_template_directory_uri() . '/css/equipe.css', array( 'coppeparque-style' ), '2013-12-13' );
     }
